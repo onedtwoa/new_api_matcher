@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="\data\processed\takamol\ROTANA STAR RENT A CAR\takamol_duplicate_cars_20240802012145.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processed\takamol\ROTANA STAR RENT A CAR\takamol_unique_cars_20240802012145.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processing\takamol\ROTANA STAR RENT A CAR\takamol_unique_cars_20240802192428.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processing\yango_cars\CAR STREET CAR RENTAL\CAR STREET CAR RENTAL_matched_20240803032945.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processing\yango_cars\CAR STREET CAR RENTAL\merged_yango_data_20240802192450.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processing\yango_cars\DREAMZ RENT A CAR L.L.C\merged_yango_data_20240802192431.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\processing\yango_cars\ROTANA STAR RENT A CAR\merged_yango_data_20240802192425.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\docs_google\AL EMAD CAR RENTAL\AL EMAD CAR RENTAL_data_20240801221401.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\docs_google\AL EMAD CAR RENTAL\AL EMAD CAR RENTAL_data_20240802192454.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\docs_google\CAR STREET CAR RENTAL\CAR STREET CAR RENTAL_data_20240802192452.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\docs_google\HEXA CAR RENTAL\HEXA CAR RENTAL_data_20240802003339.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\docs_google\HEXA CAR RENTAL\HEXA CAR RENTAL_data_20240802192448.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_bookings\A M G A RENT A CAR L.L.C\yango_bookings_data_20240801221245.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\A M G A RENT A CAR L.L.C\yango_cars_data_20240802003318.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\A M G A RENT A CAR L.L.C\yango_model_list_20240802003319.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\AL EMAD CAR RENTAL\yango_cars_data_20240801221357.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\CAR STREET CAR RENTAL\yango_cars_data_20240801221413.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\CAR STREET CAR RENTAL\yango_model_list_20240802192450.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\HEXA CAR RENTAL\yango_cars_data_20240801221348.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\ROTANA STAR RENT A CAR\merged_yango_data_20240802040205.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\raw\yango_cars\ROTANA STAR RENT A CAR\yango_model_list_20240801221248.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

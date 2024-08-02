@@ -1,0 +1,30 @@
+code,registry_manufacturer,model_specifications,fuel_type,first_maintenance_mileage,intermediate_maintenance_mileage,maintenance_mileage,name,image_map_url_3x,registry_model,image_large_url,deprecated,short_name,image_small_url,fuel_cap_side,image_pin_url_3x,fuel_distance_enabled,image_map_url_2x,tyres_info,default_tags,image_pin_url_2x,manufacturer
+0fe3abcbfc83720274c71eecca166088,AUDI,[],,,,,AUDI A3,,A3,,False,A3,,,,True,,[],[],,AUDI
+a48fab25539e5bc32fad53d52533ec8a,AUDI,[],,,,,AUDI A3,,A3,,False,A3,,,,True,,[],[],,AUDI
+6b68bf84e8a42cbc9e5959247e636e65,AUDI,[],,,,,AUDI A5 CONV,,A5 CONV,,False,A5 CONV,,,,True,,[],[],,AUDI
+019e12fce8502facf01a1cf62f88a637,AUDI,[],,,,,AUDI A6,,A6,,False,A6,,,,True,,[],[],,AUDI
+a919774c832386a2ce5a85003a4744f1,AUDI,[],,,,,AUDI A6,,A6,,False,A6,,,,True,,[],[],,AUDI
+80b4f68b0913ce374578115b71aff36d,BMW,[],,,,,BMW 520i,,520i,,False,520i,,,,True,,[],[],,BMW
+080d589618a655a2d1509ebc1d0b156f,BMW,[],,,,,BMW 735,,735,,False,735,,,,True,,[],[],,BMW
+6024ab4f130d036331e85cce6c1b93f9,BMW,[],,,,,BMW X6,,X6,,False,X6,,,,True,,[],[],,BMW
+62a9e5370f2708a1516d81b0472a9ac1,CITROEN,[],,,,,CITROEN SPACETOURER 7 SEATER,,SPACETOURER 7 SEATER,,False,SPACETOURER 7 SEATER,,,,True,,[],[],,CITROEN
+329dfb0dd36ab198e6904b0ee69e1538,DODGE,[],,,,,DODGE CHALLENGER,,CHALLENGER,,False,CHALLENGER,,,,True,,[],[],,DODGE
+df12e6540262ba9a0871695b3493b9df,FORD MUSTANG,[],,,,,FORD MUSTANG CONVERTIBLE,,CONVERTIBLE,,False,CONVERTIBLE,,,,True,,[],[],,FORD MUSTANG
+1479668c54195081cedea47d2c513a23,FORD MUSTANG,[],,,,,FORD MUSTANG COUPE,,COUPE,,False,COUPE,,,,True,,[],[],,FORD MUSTANG
+c85914cf835fe69d491b092fc32c1e48,HYUNDAI,[],,,,,HYUNDAI ELANTRA,,ELANTRA,,False,ELANTRA,,,,True,,[],[],,HYUNDAI
+49431b23b75d76e63af083aacc08acf0,HYUNDAI,[],,,,,HYUNDAI HI,,HI,,False,HI,,,,True,,[],[],,HYUNDAI
+a22ad53083afc5ee29570cfa75df316f,HYUNDAI,[],,,,,HYUNDAI HI,,HI,,False,HI,,,,True,,[],[],,HYUNDAI
+6a4f49d7647588d61329a2ed3c0daf01,HYUNDAI,[],,,,,HYUNDAI SONATA,,SONATA,,False,SONATA,,,,True,,[],[],,HYUNDAI
+cdd284c83222407311748fde4527647f,HYUNDAI,[],,,,,HYUNDAI SONATA,,SONATA,,False,SONATA,,,,True,,[],[],,HYUNDAI
+8bf531415229d9112c769bb908a21b8a,MERCEDES,[],,,,,MERCEDES C200,,C200,,False,C200,,,,True,,[],[],,MERCEDES
+04a6d468a809cd795a97b4b557915881,MERCEDES,[],,,,,MERCEDES S500,,S500,,False,S500,,,,True,,[],[],,MERCEDES
+245305193986475591891dbed7cec8ea,NISSAN,[],,,,,NISSAN ALTIMA,,ALTIMA,,False,ALTIMA,,,,True,,[],[],,NISSAN
+f1446211e8d78c2fb30bd3d3c4986660,NISSAN,[],,,,,NISSAN SENTRA,,SENTRA,,False,SENTRA,,,,True,,[],[],,NISSAN
+63d3ce5a638cd7e08b014eed96d946b9,NISSAN PATROL,[],,,,,NISSAN PATROL PLATINUM,,PLATINUM,,False,PLATINUM,,,,True,,[],[],,NISSAN PATROL
+63a57d8047ff08a011f9af32d609684c,RANGE ROVER,[],,,,,RANGE ROVER VOGUE,,VOGUE,,False,VOGUE,,,,True,,[],[],,RANGE ROVER
+c45b0521258bd31cdc6c20aebe4f8019,RANGE ROVER,[],,,,,RANGE ROVER VOGUE,,VOGUE,,False,VOGUE,,,,True,,[],[],,RANGE ROVER
+63d37f1f6d37cee969a2c17bbcad0b50,TOYOTA,[],,,,,TOYOTA COROLLA,,COROLLA,,False,COROLLA,,,,True,,[],[],,TOYOTA
+89d7811d108ae8b85cf620a65d454764,TOYOTA,[],,,,,TOYOTA COROLLA,,COROLLA,,False,COROLLA,,,,True,,[],[],,TOYOTA
+33e41eaddec432d5854aa7a4eed9cc23,TOYOTA,[],,,,,TOYOTA RUSH,,RUSH,,False,RUSH,,,,True,,[],[],,TOYOTA
+1bd462d2e59810b233617a164d3a3dad,TOYOTA,[],,,,,TOYOTA YARIS,,YARIS,,False,YARIS,,,,True,,[],[],,TOYOTA
+dc43666da4a8f447cc1de448d1a4e83c,TOYOTA,[],,,,,TOYOTA YARIS,,YARIS,,False,YARIS,,,,True,,[],[],,TOYOTA

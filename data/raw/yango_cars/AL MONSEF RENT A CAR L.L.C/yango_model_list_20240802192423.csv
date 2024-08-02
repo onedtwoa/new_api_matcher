@@ -1,0 +1,11 @@
+code,registry_manufacturer,model_specifications,fuel_type,first_maintenance_mileage,intermediate_maintenance_mileage,maintenance_mileage,name,image_map_url_3x,registry_model,image_large_url,deprecated,short_name,image_small_url,fuel_cap_side,image_pin_url_3x,fuel_distance_enabled,image_map_url_2x,tyres_info,default_tags,image_pin_url_2x,manufacturer
+0560fe54ac8f2141eff8da6cfbd08afe,CITROEN,[],,,,,CITROEN C4,,C4,,False,C4,,,,True,,[],[],,CITROEN
+ba184805162e53b0b3f254ed11481a93,CITROEN,[],,,,,CITROEN C4 X SHINE,,C4 X SHINE,,False,C4 X SHINE,,,,True,,[],[],,CITROEN
+1b97a310b39a79d3ea31a1e270f17e9f,CITROEN,[],,,,,CITROEN C5,,C5,,False,C5,,,,True,,[],[],,CITROEN
+1d92a71a0988ddbc2646a2136e12118d,KIA,[],,,,,KIA PEGAS,,PEGAS,,False,PEGAS,,,,True,,[],[],,KIA
+8e6ed8886d6c2fc2b9a71adf555c9205,MG,[],,,,,MG GT,,GT,,False,GT,,,,True,,[],[],,MG
+0d01c4a7de7fbf88ffc220a49e1bab82,MG,[],,,,,MG MG 5,,MG 5,,False,MG 5,,,,True,,[],[],,MG
+9e4ad4377dbcda4a3476c5d99eb3cd7e,MG,[],,,,,MG MG-ONE,,MG-ONE,,False,MG-ONE,,,,True,,[],[],,MG
+4df15e4310d618aae0b862726721a75f,MG,[],,,,,MG ZS,,ZS,,False,ZS,,,,True,,[],[],,MG
+fddd0bc078acfa9febe40e7df11a2a6d,OPEL,[],,,,,OPEL CORSA,,CORSA,,False,CORSA,,,,True,,[],[],,OPEL
+9d06af67ef6245afc0282c17fc4ccd69,OPEL,[],,,,,OPEL MOKKA,,MOKKA,,False,MOKKA,,,,True,,[],[],,OPEL

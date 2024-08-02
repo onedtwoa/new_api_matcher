@@ -1,0 +1,3 @@
+2024-08-01 20:01:31 - takamol_get_car_bookings_data - INFO - Start fetching takamol for ROTANA STAR RENT A CAR
+2024-08-01 20:01:33 - takamol_get_car_bookings_data - INFO - 386 cars fetched.
+2024-08-01 20:01:33 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/takamol\ROTANA STAR RENT A CAR\takamol_cars_data_20240801200133.csv

@@ -1,0 +1,36 @@
+2024-08-01 22:13:29 - takamol_get_car_bookings_data - INFO - Start fetching takamol for AL MONSEF RENT A CAR L.L.C.
+2024-08-01 22:13:29 - takamol_get_car_bookings_data - INFO - Start fetching takamol for A M G A RENT A CAR L.L.C.
+2024-08-01 22:13:30 - takamol_get_car_bookings_data - INFO - 50 cars fetched.
+2024-08-01 22:13:30 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\A M G A RENT A CAR L.L.C.\takamol_cars_data_20240801221330.csv
+2024-08-01 22:13:30 - takamol_get_car_bookings_data - INFO - 86 cars fetched.
+2024-08-01 22:13:30 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\AL MONSEF RENT A CAR L.L.C.\takamol_cars_data_20240801221330.csv
+2024-08-01 22:13:31 - takamol_get_car_bookings_data - INFO - Start fetching takamol for GOLDEN KEY RENT CAR L.L.C.
+2024-08-01 22:13:32 - takamol_get_car_bookings_data - INFO - Start fetching takamol for ROTANA STAR RENT A CAR
+2024-08-01 22:13:32 - takamol_get_car_bookings_data - INFO - 153 cars fetched.
+2024-08-01 22:13:32 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\GOLDEN KEY RENT CAR L.L.C.\takamol_cars_data_20240801221332.csv
+2024-08-01 22:13:33 - takamol_get_car_bookings_data - INFO - Start fetching takamol for AUTOBOTS RENT A CAR L.L.C.
+2024-08-01 22:13:34 - takamol_get_car_bookings_data - INFO - 386 cars fetched.
+2024-08-01 22:13:34 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\ROTANA STAR RENT A CAR\takamol_cars_data_20240801221334.csv
+2024-08-01 22:13:35 - takamol_get_car_bookings_data - INFO - 52 cars fetched.
+2024-08-01 22:13:35 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\AUTOBOTS RENT A CAR L.L.C.\takamol_cars_data_20240801221335.csv
+2024-08-01 22:13:35 - takamol_get_car_bookings_data - INFO - Start fetching takamol for DREAMZ RENT A CAR L.L.C.
+2024-08-01 22:13:36 - takamol_get_car_bookings_data - INFO - 63 cars fetched.
+2024-08-01 22:13:36 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\DREAMZ RENT A CAR L.L.C.\takamol_cars_data_20240801221336.csv
+2024-08-01 22:13:38 - takamol_get_car_bookings_data - INFO - Start fetching takamol for HOUSTON LUXURY RENT A CAR
+2024-08-01 22:13:39 - takamol_get_car_bookings_data - INFO - Start fetching takamol for LUXURY SPORTS CAR RENTAL L.L.C.
+2024-08-01 22:13:39 - takamol_get_car_bookings_data - INFO - 15 cars fetched.
+2024-08-01 22:13:39 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\LUXURY SPORTS CAR RENTAL L.L.C.\takamol_cars_data_20240801221339.csv
+2024-08-01 22:13:40 - takamol_get_car_bookings_data - INFO - 232 cars fetched.
+2024-08-01 22:13:40 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\HOUSTON LUXURY RENT A CAR\takamol_cars_data_20240801221340.csv
+2024-08-01 22:13:42 - takamol_get_car_bookings_data - INFO - Start fetching takamol for MASTERKEY RENT A CAR L.L.C.
+2024-08-01 22:13:42 - takamol_get_car_bookings_data - INFO - Start fetching takamol for FAST EXPRESS RENT A CAR L.L.C.
+2024-08-01 22:13:44 - takamol_get_car_bookings_data - INFO - Start fetching takamol for X CAR RENTAL
+2024-08-01 22:13:44 - takamol_get_car_bookings_data - INFO - 405 cars fetched.
+2024-08-01 22:13:44 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\MASTERKEY RENT A CAR L.L.C.\takamol_cars_data_20240801221344.csv
+2024-08-01 22:13:45 - takamol_get_car_bookings_data - INFO - 433 cars fetched.
+2024-08-01 22:13:45 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\FAST EXPRESS RENT A CAR L.L.C.\takamol_cars_data_20240801221345.csv
+2024-08-01 22:13:46 - takamol_get_car_bookings_data - INFO - 217 cars fetched.
+2024-08-01 22:13:46 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\X CAR RENTAL\takamol_cars_data_20240801221346.csv
+2024-08-01 22:13:55 - takamol_get_car_bookings_data - INFO - Start fetching takamol for AVENTADOR 1 CAR RENTAL
+2024-08-01 22:13:56 - takamol_get_car_bookings_data - INFO - 118 cars fetched.
+2024-08-01 22:13:56 - takamol_get_car_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/takamol\AVENTADOR 1 CAR RENTAL\takamol_cars_data_20240801221356.csv

@@ -1,0 +1,18 @@
+manufacturer,image_pin_url_3x,model_specifications,fuel_type,short_name,image_map_url_3x,maintenance_mileage,fuel_distance_enabled,registry_model,image_large_url,registry_manufacturer,intermediate_maintenance_mileage,image_map_url_2x,fuel_cap_side,image_small_url,default_tags,image_pin_url_2x,tyres_info,deprecated,first_maintenance_mileage,name,code
+Ford,,[],,Mustang,,,True,Mustang,,Ford,,,,,[],,[],False,,Ford Mustang,e2b43f4cbefe947175ea8aaf528e91bd
+JAC,,[],,S3,,,True,S3,,JAC,,,,,[],,[],False,,JAC S3,b41b071d4c2efd0a3d5c47b726873768
+KIA,,[],,Carens,,,True,Carens,,KIA,,,,,[],,[],False,,KIA Carens,a64c0321e2a710c01a569296b18d6d44
+KIA,,[],,Sonet,,,True,Sonet,,KIA,,,,,[],,[],False,,KIA Sonet,cbdbd082936a872b72d687cc9eeb4135
+KIA ,,[],,PEGAS,,,True,PEGAS,,KIA ,,,,,[],,[],False,,KIA  PEGAS,74c235db95c009619ffad43232aa1954
+Kia,,[],, Cerato,,,True, Cerato,,Kia,,,,,[],,[],False,,Kia  Cerato,175b4e7516ae95b00363934109f3e095
+Kia,,[],,K5,,,True,K5,,Kia,,,,,[],,[],False,,Kia K5,de24deb95c1b37e279049a54439084af
+MG,,[],,360,,,True,360,,MG,,,,,[],,[],False,,MG 360,4f7222cf3c03af55f4f327d482758b18
+MG,,[],,5,,,True,5,,MG,,,,,[],,[],False,,MG 5,4005fca59ec300bf86e6ea47e6d76298
+MG,,[],,ZS,,,True,ZS,,MG,,,,,[],,[],False,,MG ZS,eaa235d8119a652c8786bc84e9ff5777
+MINI,,[],,Cooper,,,True,Cooper,,MINI,,,,,[],,[],False,,MINI Cooper,54fbda615ca8b521223438d886734c1a
+Mercedes,,[],,C300,,,True,C300,,Mercedes,,,,,[],,[],False,,Mercedes C300,0f4ba2872a226ab91470ca0336ba8173
+Mitsubishi,,[],,Xpander,,,True,Xpander,,Mitsubishi,,,,,[],,[],False,,Mitsubishi Xpander,d45855297962833cf0bdb39b54ec5746
+Mitsubishi  ,,[],,Attrage,,,True,Attrage,,Mitsubishi  ,,,,,[],,[],False,,Mitsubishi   Attrage,8b36e4d8fc3721228439b34a1839320a
+Nissan,,[],,Patrol,,,True,Patrol,,Nissan,,,,,[],,[],False,,Nissan Patrol,8c5241e0d0fbb8f4e162c3f02ff0a1ec
+TOYOTA,,[],,COROLLA,,,True,COROLLA,,TOYOTA,,,,,[],,[],False,,TOYOTA COROLLA,2d5446e6ccee84b36905103f6d19a010
+Toyota,,[],,Fortuner,,,True,Fortuner,,Toyota,,,,,[],,[],False,,Toyota Fortuner,f5b942be0645c38bfbbdced69e12576d

@@ -1,0 +1,15 @@
+deprecated,manufacturer,tyres_info,model_specifications,image_pin_url_3x,first_maintenance_mileage,fuel_distance_enabled,default_tags,fuel_type,image_small_url,registry_model,registry_manufacturer,intermediate_maintenance_mileage,image_map_url_3x,fuel_cap_side,short_name,maintenance_mileage,code,image_map_url_2x,image_pin_url_2x,image_large_url,name
+False,BMW,[],[],,,True,[],,,430i Convertible,BMW,,,,430i Convertible,,57c295bc44376d03645fdeaa4ec69cc4,,,,BMW 430i Convertible
+False,Dodge,[],[],,,True,[],,,Challenger V8,Dodge,,,,Challenger V8,,0d3545decba2313435d140df8228a8b4,,,,Dodge Challenger V8
+False,Dodge,[],[],,,True,[],,,Challenger V8,Dodge,,,,Challenger V8,,cc3ccc605536b5b4de0fe7cd68f0ffdc,,,,Dodge Challenger V8
+False,Ford,[],[],,,True,[],,,Mustang V4,Ford,,,,Mustang V4,,a5a1d3ea89f3b019c9a67732a226fe73,,,,Ford Mustang V4
+False,Ford,[],[],,,True,[],,,Mustang V8,Ford,,,,Mustang V8,,5504c7d281d8c14ea3d8cfbeaa70f334,,,,Ford Mustang V8
+False,Mercedes,[],[],,,True,[],,,C300 coupe,Mercedes,,,,C300 coupe,,847457a9022b44ae014a98412c0e038d,,,,Mercedes C300 coupe
+False,Mercedes Benz,[],[],,,True,[],,,A220,Mercedes Benz,,,,A220,,3c08c12c54d80bf790f4c681c54c8bab,,,,Mercedes Benz A220
+False,Mercedes Benz,[],[],,,True,[],,,C43 amg,Mercedes Benz,,,,C43 amg,,9702fda15882f0e546f039006d41335b,,,,Mercedes Benz C43 amg
+False,Mercedes Benz,[],[],,,True,[],,,E300,Mercedes Benz,,,,E300,,078b1b1fe0bbb0c401fab41949c84342,,,,Mercedes Benz E300
+False,Mercedes Benz,[],[],,,True,[],,,GLA250,Mercedes Benz,,,,GLA250,,b01339cc6f908f65c479c8a0da40a0a4,,,,Mercedes Benz GLA250
+False,Mercedes Benz,[],[],,,True,[],,,GLE450,Mercedes Benz,,,,GLE450,,27a40ff4f38293efe5d4d8e3b8b5b7f7,,,,Mercedes Benz GLE450
+False,Nissan,[],[],,,True,[],,,Patrol,Nissan,,,,Patrol,,891302c8d0b2b4b958c38a3fb4e30359,,,,Nissan Patrol
+False,Porsche,[],[],,,True,[],,,718 boxster,Porsche,,,,718 boxster,,cb4d3e31478c7419db77f13bee07ad69,,,,Porsche 718 boxster
+False,Range Rover,[],[],,,True,[],,,Evoque,Range Rover,,,,Evoque,,74710638f33ed8035083de2d6e181576,,,,Range Rover Evoque

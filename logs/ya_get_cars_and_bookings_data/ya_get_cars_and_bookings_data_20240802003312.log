@@ -1,0 +1,195 @@
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:15 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:17 - ya_get_cars_and_bookings_data - INFO - Fetched 79 cars from API with pagination for company AL MONSEF RENT A CAR L.L.C..
+2024-08-02 00:33:17 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AL MONSEF RENT A CAR L.L.C.\yango_cars_data_20240802003317.csv
+2024-08-02 00:33:17 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 127 cars from API with pagination for company A M G A RENT A CAR L.L.C..
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\A M G A RENT A CAR L.L.C.\yango_cars_data_20240802003318.csv
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 53 bookings
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 53 total bookings from API for company AL MONSEF RENT A CAR L.L.C..
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\AL MONSEF RENT A CAR L.L.C.\yango_bookings_data_20240802003317.csv
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 10 models from API for company AL MONSEF RENT A CAR L.L.C..
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AL MONSEF RENT A CAR L.L.C.\yango_model_list_20240802003318.csv
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 30 bookings
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Fetched 30 total bookings from API for company A M G A RENT A CAR L.L.C..
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\A M G A RENT A CAR L.L.C.\yango_bookings_data_20240802003318.csv
+2024-08-02 00:33:18 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Fetched 42 models from API for company A M G A RENT A CAR L.L.C..
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\A M G A RENT A CAR L.L.C.\yango_model_list_20240802003319.csv
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Fetched 206 cars from API with pagination for company GOLDEN KEY RENT CAR L.L.C..
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\GOLDEN KEY RENT CAR L.L.C.\yango_cars_data_20240802003319.csv
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Fetched 119 bookings
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Fetched 119 total bookings from API for company GOLDEN KEY RENT CAR L.L.C..
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\GOLDEN KEY RENT CAR L.L.C.\yango_bookings_data_20240802003319.csv
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Fetched 297 cars from API with pagination for company ROTANA STAR RENT A CAR.
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_cars_data_20240802003319.csv
+2024-08-02 00:33:19 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Fetched 66 models from API for company GOLDEN KEY RENT CAR L.L.C..
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\GOLDEN KEY RENT CAR L.L.C.\yango_model_list_20240802003320.csv
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Fetched 265 bookings
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Fetched 265 total bookings from API for company ROTANA STAR RENT A CAR.
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\ROTANA STAR RENT A CAR\yango_bookings_data_20240802003319.csv
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Fetched 68 models from API for company ROTANA STAR RENT A CAR.
+2024-08-02 00:33:20 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_model_list_20240802003320.csv
+2024-08-02 00:33:21 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:21 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:21 - ya_get_cars_and_bookings_data - INFO - Fetched 13 cars from API with pagination for company AUTOBOTS RENT A CAR L.L.C..
+2024-08-02 00:33:21 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AUTOBOTS RENT A CAR L.L.C.\yango_cars_data_20240802003321.csv
+2024-08-02 00:33:21 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Fetched 1 bookings
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Fetched 1 total bookings from API for company AUTOBOTS RENT A CAR L.L.C..
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\AUTOBOTS RENT A CAR L.L.C.\yango_bookings_data_20240802003321.csv
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Fetched 83 cars from API with pagination for company AVENTADOR 1 CAR RENTAL.
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AVENTADOR 1 CAR RENTAL\yango_cars_data_20240802003322.csv
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Fetched 17 models from API for company AUTOBOTS RENT A CAR L.L.C..
+2024-08-02 00:33:22 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AUTOBOTS RENT A CAR L.L.C.\yango_model_list_20240802003322.csv
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 19 bookings
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 19 total bookings from API for company AVENTADOR 1 CAR RENTAL.
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\AVENTADOR 1 CAR RENTAL\yango_bookings_data_20240802003322.csv
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 36 cars from API with pagination for company DREAMZ RENT A CAR L.L.C..
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\DREAMZ RENT A CAR L.L.C.\yango_cars_data_20240802003323.csv
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 69 models from API for company AVENTADOR 1 CAR RENTAL.
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AVENTADOR 1 CAR RENTAL\yango_model_list_20240802003323.csv
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 13 bookings
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Fetched 13 total bookings from API for company DREAMZ RENT A CAR L.L.C..
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\DREAMZ RENT A CAR L.L.C.\yango_bookings_data_20240802003323.csv
+2024-08-02 00:33:23 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - Fetched 29 models from API for company DREAMZ RENT A CAR L.L.C..
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\DREAMZ RENT A CAR L.L.C.\yango_model_list_20240802003324.csv
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:24 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:25 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:25 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Fetched 55 cars from API with pagination for company HOUSTON LUXURY RENT A CAR.
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\HOUSTON LUXURY RENT A CAR\yango_cars_data_20240802003326.csv
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Fetched 14 cars from API with pagination for company LUXURY SPORTS CAR RENTAL L.L.C..
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\LUXURY SPORTS CAR RENTAL L.L.C.\yango_cars_data_20240802003326.csv
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Fetched 5 bookings
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Fetched 5 total bookings from API for company HOUSTON LUXURY RENT A CAR.
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\HOUSTON LUXURY RENT A CAR\yango_bookings_data_20240802003326.csv
+2024-08-02 00:33:26 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Fetched 2 bookings
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Fetched 2 total bookings from API for company LUXURY SPORTS CAR RENTAL L.L.C..
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\LUXURY SPORTS CAR RENTAL L.L.C.\yango_bookings_data_20240802003326.csv
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Fetched 43 models from API for company HOUSTON LUXURY RENT A CAR.
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\HOUSTON LUXURY RENT A CAR\yango_model_list_20240802003327.csv
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Fetched 14 models from API for company LUXURY SPORTS CAR RENTAL L.L.C..
+2024-08-02 00:33:27 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\LUXURY SPORTS CAR RENTAL L.L.C.\yango_model_list_20240802003327.csv
+2024-08-02 00:33:28 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:28 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Fetched 481 cars from API with pagination for company FAST EXPRESS RENT A CAR L.L.C..
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\FAST EXPRESS RENT A CAR L.L.C.\yango_cars_data_20240802003329.csv
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Fetched 106 bookings
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Fetched 106 total bookings from API for company FAST EXPRESS RENT A CAR L.L.C..
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\FAST EXPRESS RENT A CAR L.L.C.\yango_bookings_data_20240802003329.csv
+2024-08-02 00:33:29 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:30 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:30 - ya_get_cars_and_bookings_data - INFO - Fetched 50 models from API for company FAST EXPRESS RENT A CAR L.L.C..
+2024-08-02 00:33:30 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\FAST EXPRESS RENT A CAR L.L.C.\yango_model_list_20240802003330.csv
+2024-08-02 00:33:31 - ya_get_cars_and_bookings_data - INFO - Fetched 158 cars from API with pagination for company X CAR RENTAL.
+2024-08-02 00:33:31 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\X CAR RENTAL\yango_cars_data_20240802003331.csv
+2024-08-02 00:33:31 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Fetched 94 bookings
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Fetched 94 total bookings from API for company X CAR RENTAL.
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\X CAR RENTAL\yango_bookings_data_20240802003331.csv
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Fetched 137 models from API for company X CAR RENTAL.
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\X CAR RENTAL\yango_model_list_20240802003332.csv
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:32 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:34 - ya_get_cars_and_bookings_data - INFO - start get_cars_leasing
+2024-08-02 00:33:34 - ya_get_cars_and_bookings_data - INFO - start fetch_all_cars_with_pagination
+2024-08-02 00:33:36 - ya_get_cars_and_bookings_data - INFO - Fetched 94 cars from API with pagination for company HEXA CAR RENTAL.
+2024-08-02 00:33:36 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\HEXA CAR RENTAL\yango_cars_data_20240802003336.csv
+2024-08-02 00:33:36 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Fetched 95 bookings
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Fetched 95 total bookings from API for company HEXA CAR RENTAL.
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\HEXA CAR RENTAL\yango_bookings_data_20240802003336.csv
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Fetched 40 models from API for company HEXA CAR RENTAL.
+2024-08-02 00:33:37 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\HEXA CAR RENTAL\yango_model_list_20240802003337.csv
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Fetched 527 cars from API with pagination for company CAR STREET CAR RENTAL.
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\CAR STREET CAR RENTAL\yango_cars_data_20240802003339.csv
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Fetched 303 bookings
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Fetched 303 total bookings from API for company CAR STREET CAR RENTAL.
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\CAR STREET CAR RENTAL\yango_bookings_data_20240802003339.csv
+2024-08-02 00:33:39 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - Fetched 1043 cars from API with pagination for company AL EMAD CAR RENTAL.
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - Fetched 73 models from API for company CAR STREET CAR RENTAL.
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\CAR STREET CAR RENTAL\yango_model_list_20240802003340.csv
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AL EMAD CAR RENTAL\yango_cars_data_20240802003340.csv
+2024-08-02 00:33:40 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Fetched 960 bookings
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Fetched 960 total bookings from API for company AL EMAD CAR RENTAL.
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\AL EMAD CAR RENTAL\yango_bookings_data_20240802003340.csv
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Fetched 51 models from API for company AL EMAD CAR RENTAL.
+2024-08-02 00:33:41 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\AL EMAD CAR RENTAL\yango_model_list_20240802003341.csv
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Fetched 17 cars from API with pagination for company MASTERKEY RENT A CAR L.L.C..
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\MASTERKEY RENT A CAR L.L.C.\yango_cars_data_20240802003348.csv
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - start get_bookings
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/rental/timetable, Status Code: 200
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Fetched 6 bookings
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Fetched 6 total bookings from API for company MASTERKEY RENT A CAR L.L.C..
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_bookings\MASTERKEY RENT A CAR L.L.C.\yango_bookings_data_20240802003348.csv
+2024-08-02 00:33:48 - ya_get_cars_and_bookings_data - INFO - start get_model_list
+2024-08-02 00:33:49 - ya_get_cars_and_bookings_data - INFO - Request URL: https://drive.yango.tech/api/leasing/models/list?lang=en, Status Code: 200
+2024-08-02 00:33:49 - ya_get_cars_and_bookings_data - INFO - Fetched 17 models from API for company MASTERKEY RENT A CAR L.L.C..
+2024-08-02 00:33:49 - ya_get_cars_and_bookings_data - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\MASTERKEY RENT A CAR L.L.C.\yango_model_list_20240802003349.csv

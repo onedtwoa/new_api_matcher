@@ -1,0 +1,52 @@
+manufacturer,image_pin_url_3x,model_specifications,fuel_type,short_name,image_map_url_3x,maintenance_mileage,fuel_distance_enabled,registry_model,image_large_url,registry_manufacturer,intermediate_maintenance_mileage,image_map_url_2x,fuel_cap_side,image_small_url,default_tags,image_pin_url_2x,tyres_info,deprecated,first_maintenance_mileage,name,code
+Audi,,[],,A6,,,True,A6,,Audi,,,,,[],,[],False,,Audi A6,ac533714baa7528faa0de5f1cfd8956a
+Chevrolet,,[],,Spark,,,True,Spark,,Chevrolet,,,,,[],,[],False,,Chevrolet Spark,a2bba6ea42e72652939bf0e04a043743
+Chevrolet,,[],,Spark (old),,,True,Spark (old),,Chevrolet,,,,,[],,[],False,,Chevrolet Spark (old),b2631d477ac39194021cfba1417f0cda
+Emkoo,,[],,1.5T GL,,,True,1.5T GL,,Emkoo,,,,,[],,[],False,,Emkoo 1.5T GL,5fe1d14b4b1c5b64f9c276975329bb22
+Emkoo,,[],,2.0T GL Hybrid,,,True,2.0T GL Hybrid,,Emkoo,,,,,[],,[],False,,Emkoo 2.0T GL Hybrid,d89a0dfa9c572cdb8b40d6add22a1543
+GS3,,[],,Emzoom 1.5T Sport,,,True,Emzoom 1.5T Sport,,GS3,,,,,[],,[],False,,GS3 Emzoom 1.5T Sport,57917a014f29d78ff7de3450f4187e82
+Hyundai,,[],,Accent,,,True,Accent,,Hyundai,,,,,[],,[],False,,Hyundai Accent,4550300d36b0c30415059141eabfc28f
+Hyundai,,[],,Accent (old),,,True,Accent (old),,Hyundai,,,,,[],,[],False,,Hyundai Accent (old),bd3dce72cfc4b5115696f76e2634bcb9
+Hyundai,,[],,Creta,,,True,Creta,,Hyundai,,,,,[],,[],False,,Hyundai Creta,2024ce3ff5a55ec49481a960b4e4c6df
+Hyundai,,[],,Creta (old),,,True,Creta (old),,Hyundai,,,,,[],,[],False,,Hyundai Creta (old),401314811627c0a6eebfc9090ba5a804
+Hyundai,,[],,Kona,,,True,Kona,,Hyundai,,,,,[],,[],False,,Hyundai Kona,5659ad92688c9419a4915f3f477f3f29
+Hyundai,,[],,Palisade,,,True,Palisade,,Hyundai,,,,,[],,[],False,,Hyundai Palisade,3e1b97466fa37b9b23b59a31513c8ae2
+Hyundai,,[],,Santa Fe,,,True,Santa Fe,,Hyundai,,,,,[],,[],False,,Hyundai Santa Fe,17a5f95e40daa91b5268b89661702301
+Hyundai,,[],,Tucson,,,True,Tucson,,Hyundai,,,,,[],,[],False,,Hyundai Tucson,380593f37cd9a23d66ac4a1d0947b31a
+Hyundai,,[],,Tucson (old),,,True,Tucson (old),,Hyundai,,,,,[],,[],False,,Hyundai Tucson (old),3d2bffcd3bef4b2950e3fe8c43c0a7d0
+Hyundai,,[],,Tucson (old),,,True,Tucson (old),,Hyundai,,,,,[],,[],False,,Hyundai Tucson (old),ca21f4ad8faebcc74558283b2656612f
+Infiniti,,[],,Q50,,,True,Q50,,Infiniti,,,,,[],,[],False,,Infiniti Q50,ac4df37c59b41cc838dbe1b28c6f220d
+Infiniti,,[],,QX55,,,True,QX55,,Infiniti,,,,,[],,[],False,,Infiniti QX55,e4a505fd7788b3f420a300f32acfa0a9
+Infiniti,,[],,QX60,,,True,QX60,,Infiniti,,,,,[],,[],False,,Infiniti QX60,aaef00584d80349ae657eeebc50e3dff
+Kia,,[],,K5,,,True,K5,,Kia,,,,,[],,[],False,,Kia K5,17af3a03b30b688abf4e76ddcc7cfd83
+Kia,,[],,K5 (old),,,True,K5 (old),,Kia,,,,,[],,[],False,,Kia K5 (old),81078dd9a7f78914de86388ebedc8665
+Kia,,[],,Pegas,,,True,Pegas,,Kia,,,,,[],,[],False,,Kia Pegas,510b40638344623f98e30e1581373552
+Kia,,[],,Pegas (old),,,True,Pegas (old),,Kia,,,,,[],,[],False,,Kia Pegas (old),9ea684eee2b890d44d02b2bfeb61c99f
+Kia,,[],,Pegas (old),,,True,Pegas (old),,Kia,,,,,[],,[],False,,Kia Pegas (old),d351e5b270a98085a66d87e96465fd11
+Kia,,[],,Picanto,,,True,Picanto,,Kia,,,,,[],,[],False,,Kia Picanto,e39f359e6674ca2352f3d0f290ff72c3
+Kia,,[],,Rio,,,True,Rio,,Kia,,,,,[],,[],False,,Kia Rio,0391b485e12f28808f01fc5d217ec913
+Kia,,[],,Seltos,,,True,Seltos,,Kia,,,,,[],,[],False,,Kia Seltos,bfd58860657d75ffc6a856e214bb601e
+Kia,,[],,Seltos  (unused),,,True,Seltos  (unused),,Kia,,,,,[],,[],False,,Kia Seltos  (unused),71e9a56da949fb0373d13837cf23de36
+Kia,,[],,Sportage,,,True,Sportage,,Kia,,,,,[],,[],False,,Kia Sportage,3efe40e33b8381575eece6c3301a6a65
+Kia,,[],,Sportage (old),,,True,Sportage (old),,Kia,,,,,[],,[],False,,Kia Sportage (old),cecf0fcbf9a932909dc869c4d5695897
+Mazda,,[],,3,,,True,3,,Mazda,,,,,[],,[],False,,Mazda 3,d826366f26dbeae2bb0fc1e87a9c021d
+Mazda,,[],,6,,,True,6,,Mazda,,,,,[],,[],False,,Mazda 6,acceca69b3effa58d9d65ca422adae1f
+Mazda,,[],,CX-5,,,True,CX-5,,Mazda,,,,,[],,[],False,,Mazda CX-5,033f469299a3b758b11c655f2ffccf33
+Mazda,,[],,CX-5 (old),,,True,CX-5 (old),,Mazda,,,,,[],,[],False,,Mazda CX-5 (old),857fc819bd9d4a18b3e334af259c9ee2
+Mercedes,,[],,G63,,,True,G63,,Mercedes,,,,,[],,[],False,,Mercedes G63,2fe41d1fc36cde6e5ec11930718de15e
+Mitsubishi,,[],,ASX,,,True,ASX,,Mitsubishi,,,,,[],,[],False,,Mitsubishi ASX,964a198e610be563e6939ee78421ea90
+Mitsubishi,,[],,Attrage,,,True,Attrage,,Mitsubishi,,,,,[],,[],False,,Mitsubishi Attrage,311f7ebf0ced25b627d0445086edd758
+Mitsubishi,,[],,Attrage (old),,,True,Attrage (old),,Mitsubishi,,,,,[],,[],False,,Mitsubishi Attrage (old),bd0babf76b64d0dfe3c4cf2a01d9fe4d
+Mitsubishi,,[],,Attrage Prem,,,True,Attrage Prem,,Mitsubishi,,,,,[],,[],False,,Mitsubishi Attrage Prem,ed6d5116b7c797da57d145e33e85479b
+Mitsubishi,,[],,Mirage,,,True,Mirage,,Mitsubishi,,,,,[],,[],False,,Mitsubishi Mirage,b6645f6068dfca87b65f389b31da224d
+Nissan,,[],,Kicks,,,True,Kicks,,Nissan,,,,,[],,[],False,,Nissan Kicks,19d432fb8807742f49df7316db9a4448
+Nissan,,[],,Kicks (old),,,True,Kicks (old),,Nissan,,,,,[],,[],False,,Nissan Kicks (old),2225d1a0a2a8a5fa3378eb5a7279953f
+Nissan,,[],,Micra,,,True,Micra,,Nissan,,,,,[],,[],False,,Nissan Micra,fd7c261c0e234f0850f89b3d49665896
+Nissan,,[],,Patrol,,,True,Patrol,,Nissan,,,,,[],,[],False,,Nissan Patrol,2a043d142f93b794bea5e55346b75915
+Nissan,,[],,Patrol (old),,,True,Patrol (old),,Nissan,,,,,[],,[],False,,Nissan Patrol (old),d9cd96d806cbef6a78793f549453e119
+Nissan,,[],,Sunny,,,True,Sunny,,Nissan,,,,,[],,[],False,,Nissan Sunny,1715e54f496e00f5e384bf02330493ae
+Nissan,,[],,Sunny (unused),,,True,Sunny (unused),,Nissan,,,,,[],,[],False,,Nissan Sunny (unused),6ab3874a08c5a585cfff1ac3ab7232b3
+Nissan,,[],,Sunny (unused),,,True,Sunny (unused),,Nissan,,,,,[],,[],False,,Nissan Sunny (unused),facfaf2c2e254449b8a04a62b3c5324e
+Peugeot,,[],,2008,,,True,2008,,Peugeot,,,,,[],,[],False,,Peugeot 2008,b03fbe2492e2aa90dedb49c3b57f3fda
+Peugeot,,[],,3008,,,True,3008,,Peugeot,,,,,[],,[],False,,Peugeot 3008,ca9fe1a377880c664c024d46e7b02865
+Peugeot,,[],,3008 (old),,,True,3008 (old),,Peugeot,,,,,[],,[],False,,Peugeot 3008 (old),de77123b1ad0503a8f86308267cbad2a

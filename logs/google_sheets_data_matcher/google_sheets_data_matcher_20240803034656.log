@@ -1,0 +1,7 @@
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Total cars in Google Sheets: 414
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Total cars in YA: 536
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Successfully matched cars: 10
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Multiple matches cars: 0
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Unsuccessfully matched cars from Google Sheets: 404
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - CAR STREET CAR RENTAL Unsuccessfully matched cars from YA: 526
+2024-08-03 03:46:56 - google_sheets_data_matcher - INFO - Script finished successfully

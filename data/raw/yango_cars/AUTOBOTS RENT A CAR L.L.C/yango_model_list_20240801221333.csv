@@ -1,0 +1,18 @@
+deprecated,manufacturer,tyres_info,model_specifications,image_pin_url_3x,first_maintenance_mileage,fuel_distance_enabled,default_tags,fuel_type,image_small_url,registry_model,registry_manufacturer,intermediate_maintenance_mileage,image_map_url_3x,fuel_cap_side,short_name,maintenance_mileage,code,image_map_url_2x,image_pin_url_2x,image_large_url,name
+False,Ford,[],[],,,True,[],,,Mustang,Ford,,,,Mustang,,e2b43f4cbefe947175ea8aaf528e91bd,,,,Ford Mustang
+False,JAC,[],[],,,True,[],,,S3,JAC,,,,S3,,b41b071d4c2efd0a3d5c47b726873768,,,,JAC S3
+False,KIA,[],[],,,True,[],,,Carens,KIA,,,,Carens,,a64c0321e2a710c01a569296b18d6d44,,,,KIA Carens
+False,KIA,[],[],,,True,[],,,Sonet,KIA,,,,Sonet,,cbdbd082936a872b72d687cc9eeb4135,,,,KIA Sonet
+False,KIA ,[],[],,,True,[],,,PEGAS,KIA ,,,,PEGAS,,74c235db95c009619ffad43232aa1954,,,,KIA  PEGAS
+False,Kia,[],[],,,True,[],,, Cerato,Kia,,,, Cerato,,175b4e7516ae95b00363934109f3e095,,,,Kia  Cerato
+False,Kia,[],[],,,True,[],,,K5,Kia,,,,K5,,de24deb95c1b37e279049a54439084af,,,,Kia K5
+False,MG,[],[],,,True,[],,,360,MG,,,,360,,4f7222cf3c03af55f4f327d482758b18,,,,MG 360
+False,MG,[],[],,,True,[],,,5,MG,,,,5,,4005fca59ec300bf86e6ea47e6d76298,,,,MG 5
+False,MG,[],[],,,True,[],,,ZS,MG,,,,ZS,,eaa235d8119a652c8786bc84e9ff5777,,,,MG ZS
+False,MINI,[],[],,,True,[],,,Cooper,MINI,,,,Cooper,,54fbda615ca8b521223438d886734c1a,,,,MINI Cooper
+False,Mercedes,[],[],,,True,[],,,C300,Mercedes,,,,C300,,0f4ba2872a226ab91470ca0336ba8173,,,,Mercedes C300
+False,Mitsubishi,[],[],,,True,[],,,Xpander,Mitsubishi,,,,Xpander,,d45855297962833cf0bdb39b54ec5746,,,,Mitsubishi Xpander
+False,Mitsubishi  ,[],[],,,True,[],,,Attrage,Mitsubishi  ,,,,Attrage,,8b36e4d8fc3721228439b34a1839320a,,,,Mitsubishi   Attrage
+False,Nissan,[],[],,,True,[],,,Patrol,Nissan,,,,Patrol,,8c5241e0d0fbb8f4e162c3f02ff0a1ec,,,,Nissan Patrol
+False,TOYOTA,[],[],,,True,[],,,COROLLA,TOYOTA,,,,COROLLA,,2d5446e6ccee84b36905103f6d19a010,,,,TOYOTA COROLLA
+False,Toyota,[],[],,,True,[],,,Fortuner,Toyota,,,,Fortuner,,f5b942be0645c38bfbbdced69e12576d,,,,Toyota Fortuner

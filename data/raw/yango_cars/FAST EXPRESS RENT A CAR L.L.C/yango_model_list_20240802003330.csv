@@ -1,0 +1,51 @@
+manufacturer,image_pin_url_3x,model_specifications,fuel_type,short_name,image_map_url_3x,maintenance_mileage,fuel_distance_enabled,registry_model,image_large_url,registry_manufacturer,intermediate_maintenance_mileage,image_map_url_2x,fuel_cap_side,image_small_url,default_tags,image_pin_url_2x,tyres_info,deprecated,first_maintenance_mileage,name,code
+AUDI,,[],,A6,,,True,A6,,AUDI,,,,,[],,[],False,,AUDI A6,dd887e4eff546a6c6f14824cc89a5ff2
+BMW,,[],,420,,,True,420,,BMW,,,,,[],,[],False,,BMW 420,8edafe9a6eefe2407f6be4e83fa55fdb
+CHEVROLET,,[],,CAMARO,,,True,CAMARO,,CHEVROLET,,,,,[],,[],False,,CHEVROLET CAMARO,38cb09e65189f8fe4183cd107aca47e1
+FORD,,[],,MUSTANG,,,True,MUSTANG,,FORD,,,,,[],,[],False,,FORD MUSTANG,c3a9b01970e98eff1cf572dec520d076
+HYUNDAI,,[],,ACCENT,,,True,ACCENT,,HYUNDAI,,,,,[],,[],False,,HYUNDAI ACCENT,b6ee3deb626a1623e484c9501b72bf25
+HYUNDAI,,[],,CRETA,,,True,CRETA,,HYUNDAI,,,,,[],,[],False,,HYUNDAI CRETA,d5fa430ba6eb9a16cbe1199a5da2b5dd
+HYUNDAI,,[],,ELANTRA,,,True,ELANTRA,,HYUNDAI,,,,,[],,[],False,,HYUNDAI ELANTRA,88816151a3348e7fc98e11aeb43117c5
+HYUNDAI,,[],,H1,,,True,H1,,HYUNDAI,,,,,[],,[],False,,HYUNDAI H1,15c0879ea5c70c220f4d19c2a9980687
+HYUNDAI,,[],,KONA,,,True,KONA,,HYUNDAI,,,,,[],,[],False,,HYUNDAI KONA,b86530b4b11bf70a311c636a3298af39
+HYUNDAI,,[],,SANTA FE,,,True,SANTA FE,,HYUNDAI,,,,,[],,[],False,,HYUNDAI SANTA FE,1b94c5ef12e1c450e8f111555357179d
+HYUNDAI,,[],,SONATA,,,True,SONATA,,HYUNDAI,,,,,[],,[],False,,HYUNDAI SONATA,b215cd4af2dcdfba537f28c99f2c3922
+HYUNDAI,,[],,TUCSON,,,True,TUCSON,,HYUNDAI,,,,,[],,[],False,,HYUNDAI TUCSON,de864e855b6116fbb292d16236b1b5ec
+KIA,,[],,CERATO,,,True,CERATO,,KIA,,,,,[],,[],False,,KIA CERATO,95ff9e23a6a4e779e1dc9c03832ddffe
+KIA,,[],,K5,,,True,K5,,KIA,,,,,[],,[],False,,KIA K5,f97b5ca8eba6d9561c1e7b429e7d69f1
+KIA,,[],,OPTIMA,,,True,OPTIMA,,KIA,,,,,[],,[],False,,KIA OPTIMA,3643d8fb4d95b7440b83764aed3f7b40
+KIA,,[],,RIO,,,True,RIO,,KIA,,,,,[],,[],False,,KIA RIO,a085f88475d0e4cedef35e9979c2d0a0
+KIA,,[],,SELTOS,,,True,SELTOS,,KIA,,,,,[],,[],False,,KIA SELTOS,fb6d0648c4c97ae2f509654ba5cbd56d
+LEXUS,,[],,GX 460,,,True,GX 460,,LEXUS,,,,,[],,[],False,,LEXUS GX 460,cff843a8b336576aac5a0011510d816e
+MAZDA,,[],,2,,,True,2,,MAZDA,,,,,[],,[],False,,MAZDA 2,9dfa0eb533161c464b35f49cdda672ed
+MAZDA,,[],,3,,,True,3,,MAZDA,,,,,[],,[],False,,MAZDA 3,f74f1e14c866839fe6acf51d520e1ab5
+MAZDA,,[],,6,,,True,6,,MAZDA,,,,,[],,[],False,,MAZDA 6,fcf3d81774df913006f748b6c707d0ce
+MAZDA,,[],,CX5,,,True,CX5,,MAZDA,,,,,[],,[],False,,MAZDA CX5,830c2b793f88421ead99e4139e947161
+MERCEDES,,[],,C300,,,True,C300,,MERCEDES,,,,,[],,[],False,,MERCEDES C300,e5aa3527637b929fb2c4fac70d03d473
+MERCEDES,,[],,G63,,,True,G63,,MERCEDES,,,,,[],,[],False,,MERCEDES G63,7836ebb45d4b75c3e2d7840052bd184d
+MITSUBISHI,,[],,ASX,,,True,ASX,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI ASX,03bf157c1595877fd41203f08291e90f
+MITSUBISHI,,[],,ATTRAGE,,,True,ATTRAGE,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI ATTRAGE,8fddf547f94e1adba596c405b99eeb93
+MITSUBISHI,,[],,LANCER,,,True,LANCER,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI LANCER,126888521e408967dd36726648d7c2f7
+MITSUBISHI,,[],,MONTERO,,,True,MONTERO,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI MONTERO,1b9b8b785524361976d93e58b49425fd
+MITSUBISHI,,[],,PAJERO,,,True,PAJERO,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI PAJERO,f5138cd1729923935f232734349b98d4
+MITSUBISHI,,[],,XPANDER,,,True,XPANDER,,MITSUBISHI,,,,,[],,[],False,,MITSUBISHI XPANDER,0bd88bd9fccde6bec441379aa5246573
+Mitsubishi Attrage,,[],,2024,,,True,2024,,Mitsubishi Attrage,,,,,[],,[],False,,Mitsubishi Attrage 2024,74f6a776fdcd543ee4125a61ef33bbe6
+NISSAN,,[],,ALTIMA,,,True,ALTIMA,,NISSAN,,,,,[],,[],False,,NISSAN ALTIMA,0c0c99fcbb849d0026acf5ac8f3c5ab9
+NISSAN,,[],,KICKS,,,True,KICKS,,NISSAN,,,,,[],,[],False,,NISSAN KICKS,d0de68c70b8764df5368e6afbf92048e
+NISSAN,,[],,NAVARA,,,True,NAVARA,,NISSAN,,,,,[],,[],False,,NISSAN NAVARA,491bad647b1d50c79818277f15f1eb35
+NISSAN,,[],,NISMO,,,True,NISMO,,NISSAN,,,,,[],,[],False,,NISSAN NISMO,6304b7aeb0493718bc9511522fc40740
+NISSAN,,[],,PATHFINDER,,,True,PATHFINDER,,NISSAN,,,,,[],,[],False,,NISSAN PATHFINDER,688a741eb4159565d62a60187dbefaf3
+NISSAN,,[],,PATROL,,,True,PATROL,,NISSAN,,,,,[],,[],False,,NISSAN PATROL,edc9dd432d5583d6250af5f90f2824d3
+NISSAN,,[],,PATROL LE,,,True,PATROL LE,,NISSAN,,,,,[],,[],False,,NISSAN PATROL LE,2088ac63b91d4c0687d398225f94ef03
+NISSAN,,[],,SENTRA,,,True,SENTRA,,NISSAN,,,,,[],,[],False,,NISSAN SENTRA,a367a9ccc5ce9e7dc9e28db29a2288a9
+NISSAN,,[],,SUNNY,,,True,SUNNY,,NISSAN,,,,,[],,[],False,,NISSAN SUNNY,88788a0100a8e17d696571e76b8afd50
+NISSAN,,[],,TIDA,,,True,TIDA,,NISSAN,,,,,[],,[],False,,NISSAN TIDA,be18047cd0559bccf4880372c162aad1
+NISSAN,,[],,URVAN,,,True,URVAN,,NISSAN,,,,,[],,[],False,,NISSAN URVAN,9a84ab6536f5f482f9f0ccdc2b59874a
+NISSAN,,[],,X-TRAIL,,,True,X-TRAIL,,NISSAN,,,,,[],,[],False,,NISSAN X-TRAIL,9a9e38bf7c999708cca9ff53f4456b4a
+NISSAN SUNNY,,[],,2024,,,True,2024,,NISSAN SUNNY,,,,,[],,[],False,,NISSAN SUNNY 2024,4ffc84a3492d91e8a2133b4f6b53b9f0
+Nissan,,[],,Patrol NIsmo,,,True,Patrol NIsmo,,Nissan,,,,,[],,[],False,,Nissan Patrol NIsmo,4e30f2fa695a766e903de1c9378f5e99
+Nissan Patrol,,[],,LE Platinum,,,True,LE Platinum,,Nissan Patrol,,,,,[],,[],False,,Nissan Patrol LE Platinum,71a5a357a431445faa117d41e86939dd
+RENAULT,,[],,DUSTER,,,True,DUSTER,,RENAULT,,,,,[],,[],False,,RENAULT DUSTER,23e099952a81ca46c53eb80f7f22411c
+RENAULT,,[],,SYMBOL,,,True,SYMBOL,,RENAULT,,,,,[],,[],False,,RENAULT SYMBOL,478684d3e20a4492c3a25e7b86b7b897
+TOYOTA,,[],,COROLLA,,,True,COROLLA,,TOYOTA,,,,,[],,[],False,,TOYOTA COROLLA,9a404386ed38faf2a0f90db440b6419b
+TOYOTA,,[],,RUSH,,,True,RUSH,,TOYOTA,,,,,[],,[],False,,TOYOTA RUSH,42f91fb434f5738dd7d39053d5f80ebd
