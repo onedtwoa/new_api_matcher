@@ -1,7 +1,0 @@
-status_title,since,stage,status,until,type,tag_id,offer_id,user_id
-rental.status.on_hold.title,1722181140,,on_hold,1722267540,on_hold,38ffda2a-2ed5-4b2c-a9cd-4770970f578e,,
-rental.status.on_hold.title,1721925900,,on_hold,1722012300,on_hold,4705a07c-4dab-4426-becf-cc06ffa6b890,,
-rental.status.on_hold.title,1722012300,,on_hold,1723221900,on_hold,d3ccfbcd-964f-4208-8dac-5695636bfa93,,
-rental.status.on_hold.title,1721490000,,on_hold,1722008400,on_hold,57ab0cfe-a5be-477e-97e7-ed778f40a0b5,,
-rental.status.on_hold.title,1722012300,,on_hold,1722098700,on_hold,7a5475b8-dbc0-4b48-a9eb-b05312997120,,
-rental.status.on_hold.title,1722105000,,on_hold,1722191400,on_hold,18a631cf-c6d8-4ae7-8260-2e42c270773d,,

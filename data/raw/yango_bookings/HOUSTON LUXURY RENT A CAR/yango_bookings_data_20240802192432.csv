@@ -1,6 +1,0 @@
-status_title,status,user_id,tag_id,booking_status,since,type,offer_id,stage,until
-rental.status.on_hold.title,on_hold,,d759c94f-989f-4ee0-9a35-f1a7a762f22e,,1722184200,on_hold,,,1722270600
-rental.status.on_hold.title,on_hold,,29c16355-fa09-4eef-9630-7e0e7d850b46,,1722270600,on_hold,,,1722529800
-Confirmed,confirmed,d7eeb7bb-a23a-4927-8aae-d0908f039d50,fffb1cba-bd9c-4384-a83e-63a0acd3c568,start_delayed,1721800800,booking,2aae2171-efb4-35d0-00eb-1491e3e29a8d,prereservation,1722664800
-rental.status.on_hold.title,on_hold,,d3d510d4-6895-467c-9ed6-2a24cd43330d,,1719743580,on_hold,,,1722335580
-rental.status.on_hold.title,on_hold,,44608639-1f11-477f-b4ca-57af7744d794,,1720367400,on_hold,,,1722959400
