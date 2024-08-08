@@ -19,7 +19,7 @@ def merge_csv_files(company_name):
     models_data = file_fetcher.get_and_load_latest_csv(models_dir, '*yango_model*.csv')
 
     if cars_data.empty or models_data.empty:
-        logger.error("One or both of the CSV files are empty.")
+        logger.error(f"{company_name} One or both of the CSV files are empty.")
         return
 
     models_data.rename(columns={
@@ -36,7 +36,7 @@ def merge_csv_files(company_name):
     output_file = os.path.join(output_dir, f'merged_yango_data_{get_current_datetime()}.csv')
 
     merged_data.to_csv(output_file, index=False)
-    logger.info(f"Merged data saved to: {output_file}")
+    logger.info(f"{company_name} Merged data saved to: {output_file}")
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ from config import _config_json
 from concurrent.futures import ThreadPoolExecutor
 from src.data_extraction_and_processing.ya import ya_get_cars_and_bookings_data, ya_data_join
 from src.data_extraction_and_processing.takamol import takamol_get_car_bookings_data, \
-    takamol_data_processing, takamol_data_matcher
+    takamol_data_processing, takamol_data_matcher, prepare_for_loading
 from src.data_extraction_and_processing.docs_google import google_sheets_client, google_sheets_data_matcher
 
 pytz.timezone('Asia/Dubai')
@@ -38,6 +38,9 @@ def process_company(company_name, company_config):
 
             logger.info(f"{company_name}: Выполняем мэтч takamol и ya...")
             takamol_data_matcher.main(company_name)
+
+            logger.info(f"{company_name}: Выполняем подготовку к загрузке takamol и ya...")
+            prepare_for_loading.main(company_name)
         elif config_google_sheets:
 
             logger.info(f"{company_name}: Получение данных по бронированиям с google_sheets...")

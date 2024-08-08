@@ -37,12 +37,12 @@ def main(company_name):
     # Сохранение уникальных записей в новый файл
     unique_output_file = os.path.join(unique_output_dir, f'takamol_unique_cars_{get_current_datetime()}.csv')
     unique.to_csv(unique_output_file, index=False)
-    logger.info(f"Сохранены уникальные записи в файл: {unique_output_file}")
+    logger.info(f"{company_name} Сохранены уникальные записи в файл: {unique_output_file}")
 
     # Сохранение дублирующихся записей в новый файл
     duplicates_output_file = os.path.join(duplicates_output_dir, f'takamol_duplicate_cars_{get_current_datetime()}.csv')
     duplicates.to_csv(duplicates_output_file, index=False)
-    logger.info(f"Сохранены дублирующиеся записи в файл: {duplicates_output_file}")
+    logger.info(f"{company_name} Сохранены дублирующиеся записи в файл: {duplicates_output_file}")
 
 
 if __name__ == "__main__":

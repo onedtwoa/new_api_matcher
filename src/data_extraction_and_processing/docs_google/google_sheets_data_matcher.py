@@ -24,6 +24,10 @@ def load_data(company_name):
 
 
 def create_match_record(sheet_row, match_row):
+    try:
+        sheet_row['Vehicle Type']
+    except:
+        print(dict(sheet_row))
     return {
         "ya_id": match_row['id'],
         "ya_number": match_row['number'],
@@ -57,8 +61,17 @@ def match_cars(sheet_data, yango_cars_data):
             failed_sheet.append(sheet_row)
             continue
 
+        number_part = DataNormalizer.extract_number_part(main_part_plate_no)
+        letter_part = DataNormalizer.extract_letter_part(main_part_plate_no)
+        if not number_part or not letter_part:
+            failed_sheet.append(sheet_row)
+            logger.error(f"Invalid plate number format: {main_part_plate_no}")
+            continue
+
         matches = yango_cars_data[
-            yango_cars_data['number'].apply(lambda x: main_part_plate_no in DataNormalizer.normalize_string(x))]
+            yango_cars_data['number'].apply(lambda x:
+                                number_part in DataNormalizer.normalize_string(x) and
+                                letter_part in DataNormalizer.normalize_string(x))]
 
         if len(matches) == 1:
             matched.append(create_match_record(sheet_row, matches.iloc[0]))
@@ -108,9 +121,9 @@ def main(company_name):
         json_saver.save_to_json(multiple_matches, os.path.join(full_yango_dir,
                                         f'{company_name}_multiple_matches_{get_current_datetime()}.json'))
 
-    logger.info("Script finished successfully")
+    logger.info(f"{company_name} google matcher finished successfully")
 
 
 if __name__ == "__main__":
-    company_name = "CAR STREET CAR RENTAL"
+    company_name = "HEXA CAR RENTAL"
     main(company_name)

@@ -93,6 +93,7 @@ class LatestFileFetcher:
             self.logger.error(f"Error loading file from {directory}: {e}")
             raise
 
+
 class JSONDataSaver:
     def __init__(self, logger):
         self.logger = logger
@@ -105,6 +106,7 @@ class JSONDataSaver:
             self.logger.debug(f"Data saved to {filename}")
         except IOError as e:
             self.logger.error(f"Failed to save data: {e}")
+
 
 class DataNormalizer:
     @staticmethod
@@ -124,6 +126,32 @@ class DataNormalizer:
         if match:
             return match.group(0)
         return None
+
+    @staticmethod
+    def extract_number_part(plate_no):
+        match = re.search(r'\d+', plate_no)
+        if match:
+            return match.group(0)
+        return None
+
+    @staticmethod
+    def convert_to_json_format(text):
+        if text:
+            text = re.sub(r"'", '"', text)
+            text = re.sub(r'None', 'null', text)
+            text = re.sub(r'True', 'true', text)
+            text = re.sub(r'False', 'false', text)
+        return text
+
+    @staticmethod
+    def extract_letter_part(plate_no):
+        match = re.findall(r'[a-zA-Z]', plate_no)
+        if len(match) == 1:
+            return match[0]
+        elif len(match) == 2:
+            return match[-1]
+        else:
+            return None
 
     @staticmethod
     def normalize_string(s):

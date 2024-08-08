@@ -49,9 +49,9 @@ def main(company_name, sheet_config):
                                    f'{company_name}_data_{get_current_datetime()}.csv')
         data_saver.save_dataframe_to_csv(df, output_file)
     else:
-        logger.error("No data fetched from Google Sheets.")
+        logger.error(f"{company_name} No data fetched from Google Sheets.")
 
-    logger.info("Script finished.")
+    logger.info(f"{company_name} Script get google sheets finished.")
 
 
 if __name__ == "__main__":

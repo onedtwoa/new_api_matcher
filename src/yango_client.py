@@ -48,7 +48,11 @@ class YangoAPIClient:
             self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
             response.raise_for_status()
             offers_timetable = response.json().get('offers_timetable', {})
-            bookings = [item for sublist in offers_timetable.values() for item in sublist]
+            bookings = []
+            for id_car, sublist in offers_timetable.items():
+                for item in sublist:
+                    item.update({'id_car': id_car})
+                    bookings.append(item)
             self.logger.info(f"Fetched {len(bookings)} bookings")
             return bookings
         except requests.exceptions.RequestException as e:

@@ -115,7 +115,7 @@ def main(company_name):
         json_saver.save_to_json(multiple_matches, os.path.join(full_yango_dir,
                                         f'{company_name}_multiple_matches_{get_current_datetime()}.json'))
 
-    logger.info("Script finished successfully")
+    logger.info(f"{company_name} Script finished successfully")
 
 
 if __name__ == "__main__":
