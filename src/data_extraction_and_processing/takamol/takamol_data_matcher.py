@@ -73,8 +73,8 @@ def match_cars(takamol_data, yango_cars_data):
             yango_cars_data['number'].apply(
                 lambda x: DataNormalizer.normalize_string(car_no) in DataNormalizer.normalize_string(x) or
                           DataNormalizer.normalize_string(x) in DataNormalizer.normalize_string(car_no)) &
-            yango_cars_data['merge_manufacturer'].apply(lambda x: DataNormalizer.normalize_string(x)
-                                                                  in DataNormalizer.normalize_string(car_name))]
+            yango_cars_data['merge_manufacturer'].apply(
+                lambda x: DataNormalizer.normalize_string(x) in DataNormalizer.normalize_string(car_name))]
         if len(matches) == 1:
             matched.append(create_match_record(takamol_row, matches.iloc[0]))
             failed_yango = failed_yango[failed_yango['number'] != matches.iloc[0]['number']]
@@ -99,12 +99,12 @@ def main(company_name):
     takamol_data, yango_cars_data = load_data(company_name)
     matched, failed_takamol, failed_yango, multiple_matches = match_cars(takamol_data, yango_cars_data)
 
-    logger.info(f"{company_name} Total cars in Takamol: {len(takamol_data)}")
-    logger.info(f"{company_name} Total cars in YA: {len(yango_cars_data)}")
-    logger.info(f"{company_name} Successfully matched cars: {len(matched)}")
-    logger.info(f"{company_name} Multiple matches cars: {len(multiple_matches)}")
-    logger.info(f"{company_name} Unsuccessfully matched cars from Takamol: {len(failed_takamol)}")
-    logger.info(f"{company_name} Unsuccessfully matched cars from YA: {len(failed_yango)}")
+    logger.info(f"<{company_name}> Total cars in Takamol: {len(takamol_data)}")
+    logger.info(f"<{company_name}> Total cars in YA: {len(yango_cars_data)}")
+    logger.info(f"<{company_name}> Successfully matched cars: {len(matched)}")
+    logger.info(f"<{company_name}> Multiple matches cars: {len(multiple_matches)}")
+    logger.info(f"<{company_name}> Unsuccessfully matched cars from Takamol: {len(failed_takamol)}")
+    logger.info(f"<{company_name}> Unsuccessfully matched cars from YA: {len(failed_yango)}")
 
     full_yango_dir = os.path.join(BASE_DIR, YA_DIR, company_name)
 
@@ -115,7 +115,7 @@ def main(company_name):
         json_saver.save_to_json(multiple_matches, os.path.join(full_yango_dir,
                                         f'{company_name}_multiple_matches_{get_current_datetime()}.json'))
 
-    logger.info(f"{company_name} Script finished successfully")
+    logger.info(f"<{company_name}> Script finished successfully")
 
 
 if __name__ == "__main__":

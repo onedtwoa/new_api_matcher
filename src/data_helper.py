@@ -4,6 +4,11 @@ import pandas as pd
 import glob
 import json
 import re
+from datetime import datetime
+from src.config import BASE_DIR
+import pytz
+
+TZ_DUBAI = pytz.timezone('Asia/Dubai')
 
 
 class CSVDataSaver:
@@ -55,7 +60,7 @@ class LatestFileFetcher:
             self.logger.debug(f"Latest file found: {latest_file}")
             return latest_file
         except Exception as e:
-            self.logger.error(f"Error getting the latest file: {e}")
+            self.logger.warning(f"Error getting the latest file: {e}")
             raise
 
     def get_and_load_latest_json(self, directory, pattern):
@@ -66,9 +71,12 @@ class LatestFileFetcher:
                 data = json.load(json_file)
             self.logger.debug(f"Loaded file: {json_path}")
             return data
+        except FileNotFoundError as e:
+            self.logger.warning(f"No JSON files found: {e}")
+            return {}
         except Exception as e:
-            self.logger.error(f"Error loading file from {directory}: {e}")
-            raise
+            self.logger.error(f"Error loading JSON file from {directory}: {e}")
+            return {}
 
     def get_and_load_latest_csv(self, directory, pattern):
         self.logger.debug(f"Fetching latest CSV file from {directory} with pattern {pattern}")
@@ -78,20 +86,35 @@ class LatestFileFetcher:
                 self.logger.debug(f"File {csv_path} is empty. Returning an empty DataFrame.")
                 return pd.DataFrame()
 
-            try:
-                data = pd.read_csv(csv_path)
-                if data.empty or data.columns.empty:
-                    self.logger.debug(f"File {csv_path} contains no data or no columns. Returning an empty DataFrame.")
-                    return pd.DataFrame()
-            except pd.errors.EmptyDataError:
-                self.logger.debug(f"File {csv_path} is completely empty. Returning an empty DataFrame.")
+            data = pd.read_csv(csv_path)
+            if data.empty or data.columns.empty:
+                self.logger.debug(f"File {csv_path} contains no data or no columns. Returning an empty DataFrame.")
                 return pd.DataFrame()
 
             self.logger.debug(f"Loaded file: {csv_path}")
             return data
+        except (pd.errors.EmptyDataError, FileNotFoundError) as e:
+            self.logger.warning(f"File not found or is empty. Returning an empty DataFrame: {e}")
+            return pd.DataFrame()
         except Exception as e:
-            self.logger.error(f"Error loading file from {directory}: {e}")
-            raise
+            self.logger.error(f"Error loading CSV file from {directory}: {e}")
+            return pd.DataFrame()
+
+    def load_data_for_preparing_for_load_script(self, company_name):
+        YA_BOOKINGS_DIR = 'data/raw/yango_bookings'
+        MATCHED_DATA_DIR = 'data/processing/yango_cars'
+        bookings_data = self.get_and_load_latest_csv(os.path.join(BASE_DIR, YA_BOOKINGS_DIR, company_name),
+                                                     '*yango_bookings*.csv')
+        matched_data = self.get_and_load_latest_csv(os.path.join(BASE_DIR, MATCHED_DATA_DIR, company_name),
+                                                    '*_matched_*.csv')
+
+        if bookings_data.empty:
+            self.logger.warning(f"{company_name} Данные бронирований не найдены или пусты.")
+
+        if matched_data.empty:
+            self.logger.warning(f"{company_name} Данные по мэтчам не найдены или пусты.")
+
+        return bookings_data, matched_data
 
 
 class JSONDataSaver:
@@ -167,3 +190,64 @@ class DataNormalizer:
         for old, new in replacements.items():
             s = s.replace(old, new)
         return s
+
+
+def safe_json_loads(x, logger):
+    try:
+        if pd.isna(x):
+            return []
+        x = DataNormalizer.convert_to_json_format(x)
+        return json.loads(x)
+    except json.JSONDecodeError as e:
+        logger.error(f"Ошибка декодирования JSON: {x} — {e}")
+        return []
+
+
+def find_non_overlapping_intervals(new_intervals, existing_intervals, ya_id, logger):
+    result_intervals = []
+
+    for new_start, new_end, new_start_dubai, new_end_dubai in new_intervals:
+        logger.debug(f"Processing new interval: [{new_start}, {new_end}] (Dubai: {new_start_dubai} - {new_end_dubai})")
+        current_intervals = [(new_start, new_end, new_start_dubai, new_end_dubai)]
+
+        for exist_start, exist_end in existing_intervals:
+            logger.debug(f"Checking against existing interval: [{exist_start}, {exist_end}]")
+            next_intervals = []
+            for interval in current_intervals:
+                interval_start, interval_end, interval_start_dubai, interval_end_dubai = interval
+                if interval_end <= exist_start or interval_start >= exist_end:
+                    next_intervals.append(interval)
+                else:
+                    logger.debug(f"Found overlapping interval with existing [{exist_start}, {exist_end}]")
+                    if interval_start < exist_start:
+                        next_intervals.append((interval_start, exist_start, interval_start_dubai,
+                                    datetime.fromtimestamp(exist_start, TZ_DUBAI).strftime('%m/%d/%Y %I:%M:%S %p')))
+                    if interval_end > exist_end:
+                        next_intervals.append((exist_end, interval_end,
+                                    datetime.fromtimestamp(exist_end, TZ_DUBAI).strftime('%m/%d/%Y %I:%M:%S %p'),
+                                               interval_end_dubai))
+
+            current_intervals = next_intervals
+            logger.debug(f"Remaining intervals after comparison: {current_intervals}")
+
+        result_intervals.extend(current_intervals)
+        logger.debug(f"Non-overlapping intervals so far: {result_intervals}")
+
+    logger.debug(f"Final resulting non-overlapping intervals fro {ya_id}: {result_intervals}")
+    return result_intervals
+
+
+def merge_overlapping_intervals(intervals):
+    if not intervals:
+        return []
+
+    sorted_intervals = sorted(intervals, key=lambda x: x[0])
+    merged_intervals = [sorted_intervals[0]]
+
+    for current in sorted_intervals[1:]:
+        last = merged_intervals[-1]
+        if current[0] <= last[1]:
+            merged_intervals[-1] = (last[0], max(last[1], current[1]), last[2], current[3])
+        else:
+            merged_intervals.append(current)
+    return merged_intervals

@@ -4,7 +4,7 @@ import pytz
 from datetime import datetime
 
 TZ_DUBAI = pytz.timezone('Asia/Dubai')
-
+BASE_URL = 'https://drive.yango.tech'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 

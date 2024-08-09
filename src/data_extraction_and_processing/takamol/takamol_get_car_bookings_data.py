@@ -83,7 +83,7 @@ def fetch_all_data(client: TakamolAPIClient, processor: DataProcessor, page_size
     page_number = 1
     logger.info(f"Start fetching takamol for {processor.company_name}")
     while True:
-        logger.debug(f"Fetching page {page_number} for company {processor.company_name}")
+        logger.debug(f"<{processor.company_name}> Fetching page {page_number}")
         json_data = client.fetch_data(page_number, page_size)
         if json_data:
             cars = processor.parse_data(json_data)
@@ -99,10 +99,10 @@ def save_data_to_csv(processor: DataProcessor) -> None:
     filename = os.path.join(DATA_DIR, processor.company_name, f'takamol_cars_data_{get_current_datetime()}.csv')
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     if processor.all_cars:
-        logger.info(f"{len(processor.all_cars)} cars fetched.")
+        logger.info(f"<{processor.company_name}> {len(processor.all_cars)} cars fetched.")
         CSVDataSaver(logger).save_dict_to_csv(processor.all_cars, filename)
     else:
-        logger.info("No data fetched.")
+        logger.info(f"<{processor.company_name}> No data fetched.")
 
 
 def main(company_name, takamol_member_no, takamol_api_key) -> None:

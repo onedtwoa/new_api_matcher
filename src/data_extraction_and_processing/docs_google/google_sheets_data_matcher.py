@@ -19,7 +19,7 @@ def load_data(company_name):
     sheet_data = file_fetcher.get_and_load_latest_csv(os.path.join(BASE_DIR, GOOGLE_SHEETS_DIR,
                                                                    company_name), '*_data*.csv')
     yango_cars_data = file_fetcher.get_and_load_latest_csv(os.path.join(BASE_DIR, YA_DIR,
-                                                                        company_name), '*merged_yango_data*.csv')
+                                                                    company_name), '*merged_yango_data*.csv')
     return sheet_data, yango_cars_data
 
 

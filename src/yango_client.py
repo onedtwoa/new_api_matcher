@@ -17,35 +17,11 @@ class YangoAPIClient:
         session.headers.update({'Authorization': f'Bearer {token}'})
         return session
 
-    """
-    def fetch_data_post(self, endpoint: str, params=None):
-        url = f"{self.base_url}/{endpoint}"
-        try:
-            response = self.session.post(url, json=params)
-            self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to fetch data: {e}")
-            return None
-
-    def fetch_data_get(self, endpoint: str, params=None):
-        url = f"{self.base_url}/{endpoint}"
-        try:
-            response = self.session.get(url, params=params)
-            self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to fetch data: {e}")
-            return None
-    """
-
     def fetch_bookings(self, endpoint: str, params=None):
         url = f"{self.base_url}/{endpoint}"
         try:
             response = self.session.post(url, json=params)
-            self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
+            self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             response.raise_for_status()
             offers_timetable = response.json().get('offers_timetable', {})
             bookings = []
@@ -53,7 +29,7 @@ class YangoAPIClient:
                 for item in sublist:
                     item.update({'id_car': id_car})
                     bookings.append(item)
-            self.logger.info(f"Fetched {len(bookings)} bookings")
+            self.logger.debug(f"Fetched {len(bookings)} bookings")
             return bookings
         except requests.exceptions.RequestException as e:
             self.logger.error(f"Failed to fetch bookings: {e}")
@@ -63,7 +39,7 @@ class YangoAPIClient:
         url = f"{self.base_url}/{endpoint}?lang=en"
         try:
             response = self.session.get(url)
-            self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
+            self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             response.raise_for_status()
             return response.json().get('models', [])
         except requests.exceptions.RequestException as e:
@@ -80,7 +56,7 @@ class YangoAPIClient:
         all_cars = []
         params = initial_params.copy()
         page_number = 1
-        self.logger.info(f"start fetch_all_cars_with_pagination")
+        self.logger.debug(f"start fetch_all_cars_with_pagination")
         while True:
             params['page_number'] = page_number
             url_with_params = f"{self.base_url}/{endpoint}?page_number={params['page_number']}" \
@@ -108,11 +84,11 @@ class YangoAPIClient:
             url = f"{url}?{urlencode(string_params)}"
         try:
             response = self.session.post(url, json=params)
-            self.logger.info(f"Request URL: {response.url}, Status Code: {response.status_code}")
+            self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             if response.status_code == 200:
                 self.logger.info("Tag successfully added to car")
             elif response.status_code == 409:
-                self.logger.info("Processing existing records")
+                self.logger.warning("Processing existing records")
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException as e:
