@@ -2,7 +2,7 @@ import pandas as pd
 import os
 from src.settings import setup_logging
 from src.config import get_current_datetime, BASE_DIR
-from src.data_helper import LatestFileFetcher, CSVDataSaver,\
+from src.data_helper import LatestFileFetcher, CSVDataSaver, \
     DataNormalizer, JSONDataSaver
 
 script_name = os.path.splitext(os.path.basename(__file__))[0]
@@ -19,7 +19,7 @@ def load_data(company_name):
     sheet_data = file_fetcher.get_and_load_latest_csv(os.path.join(BASE_DIR, GOOGLE_SHEETS_DIR,
                                                                    company_name), '*_data*.csv')
     yango_cars_data = file_fetcher.get_and_load_latest_csv(os.path.join(BASE_DIR, YA_DIR,
-                                                                    company_name), '*merged_yango_data*.csv')
+                                                                        company_name), '*merged_yango_data*.csv')
     return sheet_data, yango_cars_data
 
 
@@ -70,8 +70,8 @@ def match_cars(sheet_data, yango_cars_data):
 
         matches = yango_cars_data[
             yango_cars_data['number'].apply(lambda x:
-                                number_part in DataNormalizer.normalize_string(x) and
-                                letter_part in DataNormalizer.normalize_string(x))]
+                                            number_part in DataNormalizer.normalize_string(x) and
+                                            letter_part in DataNormalizer.normalize_string(x))]
 
         if len(matches) == 1:
             matched.append(create_match_record(sheet_row, matches.iloc[0]))
@@ -96,32 +96,31 @@ def match_cars(sheet_data, yango_cars_data):
     return matched_df, failed_sheet, failed_yango, multiple_matches
 
 
-
 def main(company_name):
     sheet_data, yango_cars_data = load_data(company_name)
     matched, failed_sheet, failed_yango, multiple_matches = match_cars(sheet_data, yango_cars_data)
 
-    logger.info(f"{company_name} Total cars in Google Sheets: {len(sheet_data)}")
-    logger.info(f"{company_name} Total cars in YA: {len(yango_cars_data)}")
-    logger.info(f"{company_name} Successfully matched cars: {len(matched)}")
-    logger.info(f"{company_name} Multiple matches cars: {len(multiple_matches)}")
-    logger.info(f"{company_name} Unsuccessfully matched cars from Google Sheets: {len(failed_sheet)}")
-    logger.info(f"{company_name} Unsuccessfully matched cars from YA: {len(failed_yango)}")
+    logger.info(f"<{company_name}> Total cars in Google Sheets: {len(sheet_data)}")
+    logger.info(f"<{company_name}> Total cars in YA: {len(yango_cars_data)}")
+    logger.info(f"<{company_name}> Successfully matched cars: {len(matched)}")
+    logger.info(f"<{company_name}> Multiple matches cars: {len(multiple_matches)}")
+    logger.info(f"<{company_name}> Unsuccessfully matched cars from Google Sheets: {len(failed_sheet)}")
+    logger.info(f"<{company_name}> Unsuccessfully matched cars from YA: {len(failed_yango)}")
 
     full_yango_dir = os.path.join(BASE_DIR, YA_DIR, company_name)
 
     if not matched.empty:
         data_saver.save_dataframe_to_csv(matched, os.path.join(full_yango_dir,
-                                        f"{company_name}_matched_{get_current_datetime()}.csv"))
+                                                    f"{company_name}_matched_{get_current_datetime()}.csv"))
 
     if not failed_yango.empty:
         data_saver.save_dataframe_to_csv(failed_yango, os.path.join(full_yango_dir,
-                                        f"{company_name}_failed_yango_{get_current_datetime()}.csv"))
+                                                    f"{company_name}_failed_yango_{get_current_datetime()}.csv"))
     if multiple_matches:
         json_saver.save_to_json(multiple_matches, os.path.join(full_yango_dir,
-                                        f'{company_name}_multiple_matches_{get_current_datetime()}.json'))
+                                                    f'{company_name}_multiple_matches_{get_current_datetime()}.json'))
 
-    logger.info(f"{company_name} google matcher finished successfully")
+    logger.info(f"<{company_name}> google matcher finished successfully")
 
 
 if __name__ == "__main__":

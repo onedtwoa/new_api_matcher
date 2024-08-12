@@ -1,3 +1,0 @@
-2024-07-31 18:19:06 - ERROR - Error fetching data: APIError: [403]: Google Drive API has not been used in project 25390526765 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=25390526765 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
-2024-07-31 18:19:06 - ERROR - No data fetched from Google Sheets.
-2024-07-31 18:19:06 - INFO - Script finished.

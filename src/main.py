@@ -18,36 +18,36 @@ TAKAMOL_API_KEY = _config_json["TAKAMOL_API_KEY"]
 
 
 def process_company(company_name, company_config):
-    logger.info(f"start processing data for {company_name}...")
+    logger.info(f"start processing data for {company_name} ...")
     token_drive_ya_tech = company_config['TOKEN_DRIVE_YA_TECH']
     tag_name = company_config['tag_name']
     takamol_member_no = company_config.get('TAKAMOL_MemberNo')
     config_google_sheets = company_config.get('config_google_sheets')
     try:
-        logger.info(f"<{company_name}> Получаем бронирования и данные по машинам с ya...")
+        logger.debug(f"<{company_name}> Получаем бронирования и данные по машинам с ya...")
         ya_get_cars_and_bookings_data.main(company_name, token_drive_ya_tech)
         ya_data_join.merge_csv_files(company_name)
 
         if takamol_member_no:
-            logger.info(f"<{company_name}> Получение данных по бронированиям с takamol...")
+            logger.debug(f"<{company_name}> Получение данных по бронированиям с takamol...")
             takamol_get_car_bookings_data.main(company_name, takamol_member_no, TAKAMOL_API_KEY)
 
-            logger.info(f"<{company_name}> Убираем дубли с takamol и оставляем уникальные авто...")
+            logger.indebugfo(f"<{company_name}> Убираем дубли с takamol и оставляем уникальные авто...")
             takamol_data_processing.main(company_name)
 
-            logger.info(f"<{company_name}> Выполняем мэтч takamol и ya...")
+            logger.debug(f"<{company_name}> Выполняем мэтч takamol и ya...")
             takamol_data_matcher.main(company_name)
 
-            logger.info(f"<{company_name}> Выполняем подготовку к загрузке takamol и ya...")
+            logger.debug(f"<{company_name}> Выполняем подготовку к загрузке takamol и ya...")
             takamol_prepare_for_loading.main(company_name)
         elif config_google_sheets:
-            logger.info(f"<{company_name}> Получение данных по бронированиям с google_sheets...")
+            logger.debug(f"<{company_name}> Получение данных по бронированиям с google_sheets...")
             google_sheets_client.main(company_name, config_google_sheets)
 
-            logger.info(f"<{company_name}> Выполняем мэтч google_sheets и ya...")
+            logger.debug(f"<{company_name}> Выполняем мэтч google_sheets и ya...")
             google_sheets_data_matcher.main(company_name)
 
-            logger.info(f"<{company_name}> Выполняем подготовку к загрузке google_sheets и ya...")
+            logger.debug(f"<{company_name}> Выполняем подготовку к загрузке google_sheets и ya...")
             google_sheets_prepare_for_loading.main(company_name)
         else:
             logger.warning(f"<{company_name}> no data or processing method, "

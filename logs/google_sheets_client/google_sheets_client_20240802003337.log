@@ -1,9 +1,0 @@
-2024-08-02 00:33:39 - google_sheets_client - INFO - Data fetched successfully from Google Sheets.
-2024-08-02 00:33:39 - google_sheets_client - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/docs_google\HEXA CAR RENTAL\HEXA CAR RENTAL_data_20240802003339.csv
-2024-08-02 00:33:39 - google_sheets_client - INFO - Script finished.
-2024-08-02 00:33:42 - google_sheets_client - INFO - Data fetched successfully from Google Sheets.
-2024-08-02 00:33:42 - google_sheets_client - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/docs_google\CAR STREET CAR RENTAL\CAR STREET CAR RENTAL_data_20240802003342.csv
-2024-08-02 00:33:42 - google_sheets_client - INFO - Script finished.
-2024-08-02 00:33:43 - google_sheets_client - INFO - Data fetched successfully from Google Sheets.
-2024-08-02 00:33:43 - google_sheets_client - INFO - Data saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/docs_google\AL EMAD CAR RENTAL\AL EMAD CAR RENTAL_data_20240802003343.csv
-2024-08-02 00:33:43 - google_sheets_client - INFO - Script finished.

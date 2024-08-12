@@ -1,8 +1,0 @@
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Total cars in Takamol: 149
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Total cars in YA: 206
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Successfully matched cars: 81
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Multiple matches cars: 20
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Unsuccessfully matched cars from Takamol: 68
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - GOLDEN KEY RENT CAR L.L.C Unsuccessfully matched cars from YA: 124
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - Multiple matches saved to C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/processing/yango_cars\GOLDEN KEY RENT CAR L.L.C\multiple_matches_20240803024326.json
-2024-08-03 02:43:26 - takamol_data_matcher - INFO - Script finished successfully

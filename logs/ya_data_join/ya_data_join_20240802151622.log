@@ -1,7 +1,0 @@
-2024-08-02 15:16:22 - ya_data_join - INFO - Fetching latest CSV file from C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR with pattern *yango_cars*.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Latest file found: C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_cars_data_20240802003319.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Loaded file: C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_cars_data_20240802003319.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Fetching latest CSV file from C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR with pattern *yango_model*.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Latest file found: C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_model_list_20240802003320.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Loaded file: C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/raw/yango_cars\ROTANA STAR RENT A CAR\yango_model_list_20240802003320.csv
-2024-08-02 15:16:22 - ya_data_join - INFO - Merged data saved to: C:\Users\snaip\Documents\work\API_Integration_and_Data_Migration_Car_Bookings_new\data/processing/yango_cars\ROTANA STAR RENT A CAR\merged_yango_data_20240802151622.csv

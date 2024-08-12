@@ -40,14 +40,14 @@ def get_bookings(client, company_name):
     logger.debug(f"<{company_name}> start get_bookings")
     now = datetime.now()
     since_timestamp = int((now - timedelta(days=10)).timestamp())
-    until_timestamp = int((now + timedelta(days=80)).timestamp())
-
+    until_timestamp = int((now + timedelta(days=180)).timestamp())
     params = {
         'since': since_timestamp,
         'until': until_timestamp,
         'timeout': '27000000',
         'lang': 'en'
     }
+    logger.debug(f"<{company_name}> get_bookings params {params}")
     output_file = os.path.join(DATA_DIR_BOOKINGS, company_name, f'yango_bookings_data_{get_current_datetime()}.csv')
     all_bookings = client.fetch_bookings(BOOKINGS_API_URL, params)
     if all_bookings:
@@ -82,6 +82,6 @@ def main(company_name, token_drive_ya_tech):
 
 if __name__ == "__main__":
     from src.config import _config_json
-    company_name = "AL EMAD CAR RENTAL"
+    company_name = "HEXA CAR RENTAL"
     token_drive_ya_tech = _config_json["ya_companies"][company_name]["TOKEN_DRIVE_YA_TECH"]
     main(company_name, token_drive_ya_tech)

@@ -2,6 +2,8 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import logging
+import traceback
+from urllib.parse import urlencode
 
 
 class YangoAPIClient:
@@ -20,7 +22,8 @@ class YangoAPIClient:
     def fetch_bookings(self, endpoint: str, params=None):
         url = f"{self.base_url}/{endpoint}"
         try:
-            response = self.session.post(url, json=params)
+            self.logger.info(f"Sending request to {url} with params: {params}")
+            response = self.session.get(url, params=params)
             self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             response.raise_for_status()
             offers_timetable = response.json().get('offers_timetable', {})
@@ -59,10 +62,8 @@ class YangoAPIClient:
         self.logger.debug(f"start fetch_all_cars_with_pagination")
         while True:
             params['page_number'] = page_number
-            url_with_params = f"{self.base_url}/{endpoint}?page_number={params['page_number']}" \
-                              f"&page_size={params['page_size']}&lang={params['lang']}"
             try:
-                response = self.session.post(url_with_params)
+                response = self.session.get(f"{self.base_url}/{endpoint}", params=params)
                 self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
                 response.raise_for_status()
                 cars = response.json().get('cars', [])
@@ -80,17 +81,41 @@ class YangoAPIClient:
     def add_hold_car(self, endpoint: str, params=None, string_params=None):
         url = f"{self.base_url}/{endpoint}"
         if string_params:
-            from urllib.parse import urlencode
             url = f"{url}?{urlencode(string_params)}"
         try:
             response = self.session.post(url, json=params)
             self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             if response.status_code == 200:
                 self.logger.info("Tag successfully added to car")
+                return response.json()
             elif response.status_code == 409:
-                self.logger.warning("Processing existing records")
-            response.raise_for_status()
-            return response.json()
+                self.logger.warning(f"Processing existing records - {response.json()}")
+                return None
+            else:
+                response.raise_for_status()
         except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to add tag: {e}")
+            self.logger.error(f"Failed to add tag: {e} with params {params}")
+            self.logger.debug(f"Traceback: {traceback.format_exc()}")
             return None
+
+    def add_fake_car(self, endpoint: str, car_id: str):
+        url = f"{self.base_url}/{endpoint}"
+        params = {"car_id": car_id}
+        string_params = {"tag_name": "fake_car", "timeout": 27000000, "lang": "en"}
+        response = {}
+        try:
+            self.logger.info(f"Adding 'fake_car' tag to car {car_id}")
+            response = self.session.post(f"{url}?{urlencode(string_params)}", json=params)
+            self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
+            if response.status_code == 200:
+                self.logger.info(f"'fake_car' tag successfully added to car {car_id}")
+                return response.json()
+            elif response.status_code == 409:
+                self.logger.warning(f"Processing existing records - {response.json()}")
+                return None
+            else:
+                response.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Failed to add 'fake_car' tag to car {car_id}: {e}\n{response.json()}")
+            return None
+

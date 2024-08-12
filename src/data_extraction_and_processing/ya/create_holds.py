@@ -16,8 +16,7 @@ MAX_RECURSION_DEPTH = 5
 HOLDS_DIR = 'data/final'
 
 
-def add_tag_to_car(client, api_url, car_id, hold_start,
-                   hold_end, tag_name, hold_comment):
+def add_tag_to_car(client, api_url, car_id, hold_start, hold_end, tag_name, hold_comment):
     params = {
         "car_id": car_id,
         "since": hold_start,
@@ -29,25 +28,24 @@ def add_tag_to_car(client, api_url, car_id, hold_start,
         "timeout": 27000000,
         "lang": "en"
     }
-    response = None
+
     for attempt in range(MAX_RETRIES):
-        logger.debug(f"Sending request with params: {params} and string_params: {string_params}")
+        logger.info(f"Sending request with params: {params} and string_params: {string_params}")
         response = client.add_hold_car(api_url, params, string_params)
 
-        if response:
-            if response.get('error_details', {}).get('http_code') == 409:
-                logger.warning(f"Conflict for {hold_comment}\n"
-                               f"Response: {response}")
+        if response is not None:
+            if 'tagged_objects' in response and response['tagged_objects']:
+                logger.info(f"Successfully added tag to car: {car_id}")
                 return response
-            elif not response.get('tagged_objects'):
+            else:
                 logger.error(f"Failed to add tag to car: {response}")
                 return None
         else:
             logger.warning(f"Internal server error for {hold_comment}\n"
                            f"Retrying {attempt + 1}/{MAX_RETRIES}...")
             time.sleep(RETRY_DELAY)
-
-    return response
+    logger.error(f"Failed to add tag to car after {MAX_RETRIES} attempts: {params}")
+    return None
 
 
 def create_data_for_hold(data):
@@ -106,9 +104,11 @@ def main(company_name, token_drive_ya_tech, tag_name):
 
     for record in ready_to_load_data:
         try:
-            response = add_tag_to_car(client, TAG_API_URL, car_id=record['car_id'],
+            response = add_tag_to_car(client, TAG_API_URL,
+                                      car_id=record['car_id'],
                                       hold_start=record['requested_since'],
-                                      hold_end=record['requested_until'], hold_comment=record['message'],
+                                      hold_end=record['requested_until'],
+                                      hold_comment=record['message'],
                                       tag_name=tag_name)
             if response and response.get('tagged_objects'):
                 successful_holds += 1
@@ -117,23 +117,23 @@ def main(company_name, token_drive_ya_tech, tag_name):
             if response is not None:
                 records.append(response)
         except Exception as e:
-            logger.fatal(f"Error add add_tag_to_car for {record}: {e}")
+            logger.fatal(f"<{company_name}> Error add add_tag_to_car for {record}: {e}")
             failed_holds += 1
 
     dir4records = os.path.join(full_dir_data_holds, f'successfully_records_{get_current_datetime()}.csv')
     if records:
         CSVDataSaver(logger).save_dict_to_csv(records, dir4records)
 
-    logger.info(f"{company_name} Records saved to {dir4records}")
-    logger.info(f"{company_name} Total records: {total_records}")
-    logger.info(f"{company_name} Successfully placed holds: {successful_holds}")
-    logger.info(f"{company_name} Failed to place holds: {failed_holds}")
+    logger.info(f"<{company_name}> Records saved to {dir4records}")
+    logger.info(f"<{company_name}> Total records: {total_records}")
+    logger.info(f"<{company_name}> Successfully placed holds: {successful_holds}")
+    logger.info(f"<{company_name}> Failed to place holds: {failed_holds}")
 
 
 if __name__ == "__main__":
     from src.config import _config_json
 
-    company_name = "ROTANA STAR RENT A CAR"
+    company_name = "A M G A RENT A CAR L.L.C"
     token_drive_ya_tech = _config_json["ya_companies"][company_name]["TOKEN_DRIVE_YA_TECH"]
     tag_name = _config_json["ya_companies"][company_name]["tag_name"]
     main(company_name, token_drive_ya_tech, tag_name)

@@ -25,7 +25,7 @@ def get_intervals_for_default_booking():
 
 
 def merge_data(bookings_data, matched_data):
-    logger.info("Starting merge_data")
+    logger.debug("Starting merge_data")
     logger.debug(f"Initial matched_data columns: {matched_data.columns}")
 
     matched_data['sheet_Status'] = matched_data['sheet_Status'].str.lower().str.replace(' ', '')
@@ -56,7 +56,7 @@ def merge_data(bookings_data, matched_data):
     merged_data = pd.DataFrame(results)
     logger.debug(f"Final merged_data: {merged_data.head()}")
 
-    logger.info("Finished merge_data")
+    logger.debug("Finished merge_data")
     return merged_data
 
 
@@ -69,7 +69,7 @@ def main(company_name):
     merged_data = merge_data(bookings_data, matched_data)
     data_saver.save_dataframe_to_csv(merged_data,
                                      os.path.join(RES_DIR, company_name, f"ready_to_load_{get_current_datetime()}.csv"))
-    logger.info("prepare_for_loading finished successfully")
+    logger.info(f"<{company_name}> prepare_for_loading finished successfully")
 
 
 if __name__ == "__main__":
