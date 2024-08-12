@@ -16,7 +16,7 @@ MAX_RECURSION_DEPTH = 5
 HOLDS_DIR = 'data/final'
 
 
-def add_tag_to_car(client, api_url, car_id, hold_start, hold_end, tag_name, hold_comment):
+def add_tag_to_car(client, company_name, api_url, car_id, hold_start, hold_end, tag_name, hold_comment):
     params = {
         "car_id": car_id,
         "since": hold_start,
@@ -30,21 +30,22 @@ def add_tag_to_car(client, api_url, car_id, hold_start, hold_end, tag_name, hold
     }
 
     for attempt in range(MAX_RETRIES):
-        logger.info(f"Sending request with params: {params} and string_params: {string_params}")
+        logger.debug(f"<{company_name}> Sending request with params: {params} and string_params: {string_params}")
         response = client.add_hold_car(api_url, params, string_params)
 
         if response is not None:
             if 'tagged_objects' in response and response['tagged_objects']:
-                logger.info(f"Successfully added tag to car: {car_id}")
+                logger.info(f"<{company_name}> Successfully added tag to car: {car_id}")
                 return response
             else:
-                logger.error(f"Failed to add tag to car: {response}")
+                logger.error(f"<{company_name}> Failed to add tag to car: {response}")
                 return None
         else:
-            logger.warning(f"Internal server error for {hold_comment}\n"
+            logger.debug(f"Internal server error for {hold_comment}\n"
                            f"Retrying {attempt + 1}/{MAX_RETRIES}...")
             time.sleep(RETRY_DELAY)
-    logger.error(f"Failed to add tag to car after {MAX_RETRIES} attempts: {params}")
+    logger.error(f"<{company_name}> Failed to add tag to car "
+                 f"after {MAX_RETRIES} attempts {hold_comment}: {params}")
     return None
 
 
@@ -104,7 +105,7 @@ def main(company_name, token_drive_ya_tech, tag_name):
 
     for record in ready_to_load_data:
         try:
-            response = add_tag_to_car(client, TAG_API_URL,
+            response = add_tag_to_car(client, company_name, TAG_API_URL,
                                       car_id=record['car_id'],
                                       hold_start=record['requested_since'],
                                       hold_end=record['requested_until'],

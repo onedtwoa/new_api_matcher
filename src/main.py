@@ -8,6 +8,7 @@ from src.data_extraction_and_processing.takamol import takamol_get_car_bookings_
                                         takamol_data_processing, takamol_data_matcher, takamol_prepare_for_loading
 from src.data_extraction_and_processing.docs_google import google_sheets_client, google_sheets_data_matcher, \
                                         google_sheets_prepare_for_loading
+from src import del_old_data
 
 pytz.timezone('Asia/Dubai')
 
@@ -18,7 +19,7 @@ TAKAMOL_API_KEY = _config_json["TAKAMOL_API_KEY"]
 
 
 def process_company(company_name, company_config):
-    logger.info(f"start processing data for {company_name} ...")
+    logger.info(f"<{company_name}> start processing data...")
     token_drive_ya_tech = company_config['TOKEN_DRIVE_YA_TECH']
     tag_name = company_config['tag_name']
     takamol_member_no = company_config.get('TAKAMOL_MemberNo')
@@ -32,7 +33,7 @@ def process_company(company_name, company_config):
             logger.debug(f"<{company_name}> Получение данных по бронированиям с takamol...")
             takamol_get_car_bookings_data.main(company_name, takamol_member_no, TAKAMOL_API_KEY)
 
-            logger.indebugfo(f"<{company_name}> Убираем дубли с takamol и оставляем уникальные авто...")
+            logger.debug(f"<{company_name}> Убираем дубли с takamol и оставляем уникальные авто...")
             takamol_data_processing.main(company_name)
 
             logger.debug(f"<{company_name}> Выполняем мэтч takamol и ya...")
@@ -61,6 +62,7 @@ def process_company(company_name, company_config):
 
 
 def main():
+    del_old_data.main()
     rantal_companies = _config_json['ya_companies']
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(process_company, company_name, company_config)
@@ -72,3 +74,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# написать обработчик уникальных машин для яндекса
+# переделать под текущие реалии скрипт для поиска авто с активной бронью которых у нас нет
+# запихнуть все в докер и закинуть на сервер
+# написать тг бота с сохранением файлов и статистикой

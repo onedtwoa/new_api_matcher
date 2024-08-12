@@ -22,7 +22,7 @@ class YangoAPIClient:
     def fetch_bookings(self, endpoint: str, params=None):
         url = f"{self.base_url}/{endpoint}"
         try:
-            self.logger.info(f"Sending request to {url} with params: {params}")
+            self.logger.debug(f"Sending request to {url} with params: {params}")
             response = self.session.get(url, params=params)
             self.logger.debug(f"Request URL: {response.url}, Status Code: {response.status_code}")
             response.raise_for_status()

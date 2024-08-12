@@ -22,7 +22,7 @@ def delete_old_files(directory, file_extensions, time_threshold):
                 if current_time - file_mod_time > time_threshold:
                     try:
                         os.remove(file_path)
-                        logger.info(f"Deleted file: {file_path}")
+                        logger.debug(f"Deleted file: {file_path}")
                     except Exception as e:
                         logger.error(f"Failed to delete {file_path}: {e}")
 

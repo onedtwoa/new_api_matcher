@@ -81,7 +81,7 @@ class DataProcessor:
 
 def fetch_all_data(client: TakamolAPIClient, processor: DataProcessor, page_size: int = 100) -> None:
     page_number = 1
-    logger.info(f"Start fetching takamol for {processor.company_name}")
+    logger.debug(f"<{processor.company_name}> Start fetching takamol")
     while True:
         logger.debug(f"<{processor.company_name}> Fetching page {page_number}")
         json_data = client.fetch_data(page_number, page_size)
