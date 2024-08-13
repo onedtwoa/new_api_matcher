@@ -33,17 +33,25 @@ def merge_csv_files(company_name):
     successful_merge = merged_data[~merged_data['merge_manufacturer'].isna()]
     unsuccessful_merge = merged_data[merged_data['merge_manufacturer'].isna()]
 
+    duplicates = successful_merge[successful_merge.duplicated(subset=['number', 'merge_name'], keep=False)]
+    successful_merge = successful_merge.drop_duplicates(subset=['number', 'merge_name'], keep=False)
+
     output_dir = os.path.join(BASE_DIR, OUTPUT_DIR, company_name)
     os.makedirs(output_dir, exist_ok=True)
 
     success_output_file = os.path.join(output_dir, f'merged_yango_data_{get_current_datetime()}.csv')
     unsuccessful_output_file = os.path.join(output_dir, f'model_missing_yango_data_{get_current_datetime()}.csv')
+    duplicates_output_file = os.path.join(output_dir, f'duplicate_yango_data_{get_current_datetime()}.csv')
 
     successful_merge.to_csv(success_output_file, index=False)
     logger.debug(f"<{company_name}> Successful merges saved to: {success_output_file}")
 
     unsuccessful_merge.to_csv(unsuccessful_output_file, index=False)
     logger.debug(f"<{company_name}> Unsuccessful merges saved to: {unsuccessful_output_file}")
+
+    if not duplicates.empty:
+        duplicates.to_csv(duplicates_output_file, index=False)
+        logger.debug(f"<{company_name}> Duplicates saved to: {duplicates_output_file}")
 
 
 if __name__ == "__main__":

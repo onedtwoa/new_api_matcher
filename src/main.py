@@ -8,7 +8,7 @@ from src.data_extraction_and_processing.takamol import takamol_get_car_bookings_
                                         takamol_data_processing, takamol_data_matcher, takamol_prepare_for_loading
 from src.data_extraction_and_processing.docs_google import google_sheets_client, google_sheets_data_matcher, \
                                         google_sheets_prepare_for_loading
-from src import del_old_data
+from src.data_extraction_and_processing import del_old_data
 
 pytz.timezone('Asia/Dubai')
 
@@ -19,6 +19,9 @@ TAKAMOL_API_KEY = _config_json["TAKAMOL_API_KEY"]
 
 
 def process_company(company_name, company_config):
+    if company_name in ["AL EMAD CAR RENTAL", "CAR STREET CAR RENTAL"]:
+        logger.info(f"<{company_name}> skip...")
+        return
     logger.info(f"<{company_name}> start processing data...")
     token_drive_ya_tech = company_config['TOKEN_DRIVE_YA_TECH']
     tag_name = company_config['tag_name']
@@ -75,7 +78,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# написать обработчик уникальных машин для яндекса
 # переделать под текущие реалии скрипт для поиска авто с активной бронью которых у нас нет
 # запихнуть все в докер и закинуть на сервер
 # написать тг бота с сохранением файлов и статистикой

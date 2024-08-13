@@ -3,7 +3,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 from src.settings import setup_logging
 from src.config import get_current_datetime, BASE_DIR
-from src.data_helper import LatestFileFetcher, CSVDataSaver, JSONDataSaver, TZ_DUBAI, find_non_overlapping_intervals
+from src.data_helper import LatestFileFetcher, CSVDataSaver, JSONDataSaver, TZ_DUBAI, \
+    find_non_overlapping_intervals, merge_matched_and_ya_unmatched_data
 
 script_name = os.path.splitext(os.path.basename(__file__))[0]
 logger = setup_logging(script_name)
@@ -60,18 +61,38 @@ def merge_data(bookings_data, matched_data):
     return merged_data
 
 
-def main(company_name):
-    bookings_data, matched_data = file_fetcher.load_data_for_preparing_for_load_script(company_name)
+def save_available_cars_with_bookings(bookings_data, matched_data, company_name):
+    available_cars = matched_data[matched_data['sheet_Status'].str.lower().str.replace(' ', '') == 'available']
+    cars_with_bookings = available_cars[available_cars['ya_id'].isin(bookings_data['id_car'])]
 
-    if matched_data.empty:
+    if not cars_with_bookings.empty:
+        output_file = os.path.join(RES_DIR, company_name, f"available_cars_with_bookings_{get_current_datetime()}.csv")
+        data_saver.save_dataframe_to_csv(cars_with_bookings, output_file)
+        logger.info(f"<{company_name}> available cars with bookings: {len(cars_with_bookings)}")
+    else:
+        logger.debug(f"<{company_name}> No available cars with bookings found.")
+
+
+def save_prepare_data_for_loading(bookings_data, matched_data, ya_unmatched_data, company_name):
+    data_for_hold = merge_matched_and_ya_unmatched_data(matched_data, ya_unmatched_data)
+    if data_for_hold.empty:
+        logger.info(f"<{company_name}> No data to hold for unmatched cars.")
         return
 
-    merged_data = merge_data(bookings_data, matched_data)
-    data_saver.save_dataframe_to_csv(merged_data,
-                                     os.path.join(RES_DIR, company_name, f"ready_to_load_{get_current_datetime()}.csv"))
-    logger.info(f"<{company_name}> prepare_for_loading finished successfully")
+    merged_data = merge_data(bookings_data, data_for_hold)
+    output_file = os.path.join(RES_DIR, company_name, f"ready_to_load_{get_current_datetime()}.csv")
+    data_saver.save_dataframe_to_csv(merged_data, output_file)
+    logger.info(f"<{company_name}> prepare_for_loading cars: {len(merged_data)}")
+
+
+def main(company_name):
+    bookings_data, matched_data, ya_unmatched_data = file_fetcher.load_data_for_preparing_for_load_script(company_name)
+
+    save_available_cars_with_bookings(bookings_data, matched_data, company_name)
+
+    save_prepare_data_for_loading(bookings_data, matched_data, ya_unmatched_data, company_name)
 
 
 if __name__ == "__main__":
-    company_name = "AL EMAD CAR RENTAL"
+    company_name = "HEXA CAR RENTAL"
     main(company_name)

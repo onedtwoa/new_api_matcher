@@ -93,7 +93,8 @@ def match_cars(sheet_data, yango_cars_data):
             failed_sheet.append(sheet_row)
 
     matched_df = pd.DataFrame(matched)
-    return matched_df, failed_sheet, failed_yango, multiple_matches
+    failed_sheet_df = pd.DataFrame(failed_sheet)
+    return matched_df, failed_sheet_df, failed_yango, multiple_matches
 
 
 def main(company_name):
@@ -113,6 +114,9 @@ def main(company_name):
         data_saver.save_dataframe_to_csv(matched, os.path.join(full_yango_dir,
                                                     f"{company_name}_matched_{get_current_datetime()}.csv"))
 
+    if not failed_sheet.empty:
+        data_saver.save_dataframe_to_csv(failed_sheet, os.path.join(full_yango_dir,
+                                                    f"{company_name}_unmatched_sheet_{get_current_datetime()}.csv"))
     if not failed_yango.empty:
         data_saver.save_dataframe_to_csv(failed_yango, os.path.join(full_yango_dir,
                                                     f"{company_name}_failed_yango_{get_current_datetime()}.csv"))

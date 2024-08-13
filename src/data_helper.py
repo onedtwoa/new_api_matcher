@@ -107,14 +107,20 @@ class LatestFileFetcher:
                                                      '*yango_bookings*.csv')
         matched_data = self.get_and_load_latest_csv(os.path.join(BASE_DIR, MATCHED_DATA_DIR, company_name),
                                                     '*_matched_*.csv')
+        ya_unmatched_data = self.get_and_load_latest_csv(os.path.join(BASE_DIR, MATCHED_DATA_DIR, company_name),
+                                                    '*_failed_*.csv')
 
         if bookings_data.empty:
             self.logger.warning(f"{company_name} Данные бронирований не найдены или пусты.")
 
+        if ya_unmatched_data.empty:
+            self.logger.warning(f"{company_name} Данные ya_unmatched_data не найдены или пусты.")
+
         if matched_data.empty:
             self.logger.warning(f"{company_name} Данные по мэтчам не найдены или пусты.")
 
-        return bookings_data, matched_data
+        return bookings_data, matched_data, ya_unmatched_data
+
 
 
 class JSONDataSaver:
@@ -251,3 +257,18 @@ def merge_overlapping_intervals(intervals):
         else:
             merged_intervals.append(current)
     return merged_intervals
+
+
+def merge_matched_and_ya_unmatched_data(matched_data, ya_unmatched_data):
+    unmatched_data = pd.DataFrame({
+        'ya_id': ya_unmatched_data['id'],
+        'ya_number': ya_unmatched_data['number'],
+        'ya_merge_manufacturer': ya_unmatched_data['merge_manufacturer'],
+        'ya_merge_short_name': ya_unmatched_data['merge_name'],
+        'sheet_PlateNo': 'unmatched_data',
+        'sheet_VehicleType': 'unmatched_data',
+        'sheet_Status': 'hold_for_unmatched_data'
+    })
+    merged_data = pd.concat([matched_data, unmatched_data], ignore_index=True)
+
+    return merged_data
